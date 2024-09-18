@@ -1,7 +1,7 @@
 <?php
 // connection.php
 $host = 'localhost';
-$dbname = 'TLE1_database';
+$dbname = 'TLE1';
 $user = 'root';
 $pass = '';
 
