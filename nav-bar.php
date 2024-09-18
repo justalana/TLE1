@@ -1,10 +1,10 @@
 <?php
-require_once 'index.php'
 ?>
 
 <nav>
     <div class="nav-bar-left">
         <img src="img/vitalislogo.png" alt="Logo">
+        <h2>Vitalis System</h2>
     </div>
 
     <div class="nav-bar-middle">
