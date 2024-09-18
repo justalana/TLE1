@@ -1,0 +1,45 @@
+H1 {
+    display: flex;
+    justify-content: center;
+}
+
+#tophalf {
+    display: flex;
+}
+
+#header-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header img {
+    width: 20vw;
+    height: 100%;
+}
+
+#header-content {
+    /* display: flex; */
+    width: 70vw;
+}
+
+#button {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+
+#circles {
+    display: flex;
+    justify-content: center;
+}
+
+#circles img {
+    width: 20px;
+}
+
+#header-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
