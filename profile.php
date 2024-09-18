@@ -32,8 +32,8 @@ mysqli_close($db);
             <li>Email: <?= htmlentities($user_info['email'])?></li>
             <li>Phone number: 0<?= htmlentities($user_info['phone_number'])?></li>
             <li>Date of birth: <?= htmlentities($user_info['date_of_birth'])?></li>
-            <li>Height: <?= htmlentities($user_info['height'])?></li>
-            <li>Weight: <?= htmlentities($user_info['weight'])?></li>
+            <li>Height: <?= htmlentities($user_info['height'])?> cm</li>
+            <li>Weight: <?= htmlentities($user_info['weight'])?> kg</li>
             <li>BMI: <?= htmlentities($user_info['bmi'])?></li>
             <li>Blood Type: <?= htmlentities($user_info['blood_type'])?></li>
         </ul>
