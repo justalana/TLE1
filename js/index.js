@@ -1,10 +1,8 @@
 // Creeër de elementen
 const container = document.createElement('section')
 
-// Right div, bevat afbeelding
+// Right div & left div
 const divRight = document.createElement('div');
-
-
 const divLeft = document.createElement('div')
 divLeft.classList.add('divLeft')
 
@@ -47,4 +45,7 @@ container.appendChild(divRight)
 // Voeg de div toe aan het document body
 headerSelector.appendChild(title);
 headerSelector.appendChild(container);
+
+
+
 

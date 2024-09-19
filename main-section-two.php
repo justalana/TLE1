@@ -2,7 +2,7 @@
 ?>
 <h1>ONDERZOEK DEELNEMERS</h1>
 <div id="deelnemers-cards">
-    <?php for($i = 0; $i < 5; $i++) {?>
+    <?php for($i = 0; $i < 4; $i++) {?>
     <div class="deelnemer-card">
         <img src="img/vitalislogo.png" alt="">
         <h2>Roshan</h2>

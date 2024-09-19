@@ -1,13 +1,4 @@
 <?php
-require_once "connection.php"; // Include connection.php first
-require_once "main.php";  // Include main.php where ClassLoadTest is defined
-
-// Instantiate the ClassLoadTest class and pass the connection
-/** @var TYPE_NAME $conn */
-$classLoadTest = new ClassLoadTest($conn);
-
-// Call the getUsers method to fetch all users
-$users = $classLoadTest->getUsers();
 
 
 ?>
@@ -33,11 +24,11 @@ $users = $classLoadTest->getUsers();
     ?>
 </header>
 <main>
-<section id="onze-specialisten">
-    <?php
-    require_once 'main-section-one.php';
-    ?>
-</section>
+    <section id="onze-specialisten">
+        <?php
+        require_once 'main-section-one.php';
+        ?>
+    </section>
     <section id="onderzoek-deelnemers">
         <?php
         require_once 'main-section-two.php';
@@ -49,7 +40,11 @@ $users = $classLoadTest->getUsers();
         ?>
     </section>
 </main>
-
-
+<!-- footer -->
+<footer>
+    <?php
+    require_once 'footer.php';
+    ?>
+</footer>
 </body>
 </html>

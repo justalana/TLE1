@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cc2b449-1deb-491c-9f18-417613709880" name="Changes" comment="javascript gebruikt om de header te creeren" />
+    <list default="true" id="3cc2b449-1deb-491c-9f18-417613709880" name="Changes" comment="php homepage basis toegevoegd met php en javascript.">
+      <change afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/tle1_database.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-section-three.php" beforeDir="false" afterPath="$PROJECT_DIR$/main-section-three.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-section-two.php" beforeDir="false" afterPath="$PROJECT_DIR$/main-section-two.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +43,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/css/index.css" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/js/index.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/main-section-three.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -43,6 +56,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "branch-roshan",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,6 +64,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
+    ]
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -73,6 +92,8 @@
       <workItem from="1726601205659" duration="752000" />
       <workItem from="1726656014080" duration="94000" />
       <workItem from="1726656169070" duration="1188000" />
+      <workItem from="1726698244733" duration="115000" />
+      <workItem from="1726728846826" duration="10920000" />
     </task>
     <task id="LOCAL-00001" summary="push test">
       <option name="closed" value="true" />
@@ -82,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726659809986</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="php homepage basis toegevoegd met php en javascript.">
+      <option name="closed" value="true" />
+      <created>1726698352470</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726698352470</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="push test" />
-    <option name="LAST_COMMIT_MESSAGE" value="push test" />
+    <MESSAGE value="php homepage basis toegevoegd met php en javascript." />
+    <option name="LAST_COMMIT_MESSAGE" value="php homepage basis toegevoegd met php en javascript." />
   </component>
 </project>
