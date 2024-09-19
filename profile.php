@@ -25,19 +25,23 @@ mysqli_close($db);
     <p>navbar</p>
 </nav>
 <body>
-<div>
-    <h2><?= htmlentities($user_info['name'])?></h2>
-    <section>
-        <ul>
-            <li>Email: <?= htmlentities($user_info['email'])?></li>
-            <li>Phone number: 0<?= htmlentities($user_info['phone_number'])?></li>
-            <li>Date of birth: <?= htmlentities($user_info['date_of_birth'])?></li>
-            <li>Height: <?= htmlentities($user_info['height'])?> cm</li>
-            <li>Weight: <?= htmlentities($user_info['weight'])?> kg</li>
-            <li>BMI: <?= htmlentities($user_info['bmi'])?></li>
-            <li>Blood Type: <?= htmlentities($user_info['blood_type'])?></li>
-        </ul>
-    </section>
+<div class="flex-container">
+    <div class="flex-box">
+        <h2><?= htmlentities($user_info['name'])?></h2>
+        <section>
+            <p class="category">Email</p><p><?= htmlentities($user_info['email'])?></p>
+            <p class="category">Telefoonnummer</p><p>0<?= htmlentities($user_info['phone_number'])?></p>
+            <p class="category">Geboortedatum</p><p><?= htmlentities($user_info['date_of_birth'])?></p>
+            <p class="category">Lengte</p><p><?= htmlentities($user_info['height'])?></p>
+            <p class="category">Gewicht</p><p><?= htmlentities($user_info['weight'])?></p>
+            <p class="category">BMI</p><p><?= htmlentities($user_info['bmi'])?></p>
+            <p class="category">Bloedtype</p><p><?= htmlentities($user_info['blood_type'])?></p>
+        </section>
+    </div>
+    <div class="flex-box">
+
+    </div>
+
 </div>
 </body>
 </html>
