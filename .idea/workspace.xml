@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cc2b449-1deb-491c-9f18-417613709880" name="Changes" comment="Database gefixed met fouten + Homepage section 3 afgemaakt">
-      <change afterPath="$PROJECT_DIR$/alle-onderzoeken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/alle-onderzoeken.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/onderzoek-data.json" afterDir="false" />
+    <list default="true" id="3cc2b449-1deb-491c-9f18-417613709880" name="Changes" comment="Geexperimenteerd met Javascript. JSON bestand gebruikt om de data te laden&#10;&#10;PHP gebruikt om data te laden">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alle-onderzoeken.php" beforeDir="false" afterPath="$PROJECT_DIR$/alle-onderzoeken.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main-section-three.php" beforeDir="false" afterPath="$PROJECT_DIR$/main-section-three.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nav-bar.php" beforeDir="false" afterPath="$PROJECT_DIR$/nav-bar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +88,8 @@
       <workItem from="1726656169070" duration="1188000" />
       <workItem from="1726698244733" duration="115000" />
       <workItem from="1726728846826" duration="12805000" />
-      <workItem from="1726912300792" duration="17219000" />
+      <workItem from="1726912300792" duration="17305000" />
+      <workItem from="1726936564681" duration="676000" />
     </task>
     <task id="LOCAL-00001" summary="push test">
       <option name="closed" value="true" />
@@ -119,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726747395592</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Geexperimenteerd met Javascript. JSON bestand gebruikt om de data te laden&#10;&#10;PHP gebruikt om data te laden">
+      <option name="closed" value="true" />
+      <created>1726934752564</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726934752564</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +133,18 @@
     <MESSAGE value="push test" />
     <MESSAGE value="php homepage basis toegevoegd met php en javascript." />
     <MESSAGE value="Database gefixed met fouten + Homepage section 3 afgemaakt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database gefixed met fouten + Homepage section 3 afgemaakt" />
+    <MESSAGE value="Geexperimenteerd met Javascript. JSON bestand gebruikt om de data te laden&#10;&#10;PHP gebruikt om data te laden" />
+    <option name="LAST_COMMIT_MESSAGE" value="Geexperimenteerd met Javascript. JSON bestand gebruikt om de data te laden&#10;&#10;PHP gebruikt om data te laden" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/alle-onderzoeken.php</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

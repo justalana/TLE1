@@ -117,7 +117,7 @@ header section img {
 }
 
 #gekozen-onderzoeken {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     gap: 3vw;
     padding: 5vh 2vw;
@@ -202,8 +202,9 @@ header section img {
 main input{
     margin: 10vh 2vw 0;
 }
-#section-article{
-    display: flex;
+#alle-onderzoeken{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     gap: 3vw;
     padding: 5vh 2vw;

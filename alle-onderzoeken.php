@@ -7,6 +7,7 @@ $onderzoeken = [];
 while ($row = mysqli_fetch_assoc($result)) {
     $onderzoeken[] = $row;
 }
+
 ?>
 
 
@@ -31,19 +32,19 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 </header>
 <main>
-    <div id="gekozen-onderzoeken">
+    <section id="alle-onderzoeken">
         <?php foreach ($onderzoeken as $onderzoek) { ?>
             <div class="gekozen-onderzoek-card">
                 <h2><?= $onderzoek['experiment'] ?></h2>
                 <h2>€<?= $onderzoek['money'] ?></h2>
                 <div class="gekozen-onderzoek-card-middle">
-                    <p>datum <?php echo ($i * 4) - 1 ?>/09 </p>
+                    <p>datum 14/09 </p>
                     <p><?= $onderzoek['explenation'] ?></p>
                 </div>
                 <a href="">Aanmelden</a>
             </div>
         <?php } ?>
-    </div>
+    </section>
 </main>
 <!--
 Moet nog naar gekeken worden waarom de php eerder laad dan de rest
