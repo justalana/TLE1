@@ -1,3 +1,7 @@
+
+
+const headerSelector = document.querySelector('header')
+
 // Creeër de elementen
 const container = document.createElement('section')
 
@@ -10,7 +14,7 @@ divLeft.classList.add('divLeft')
 
 
 
-const headerSelector = document.querySelector('header')
+
 // Maak een h1 element voor de titel
 const title = document.createElement('h1');
 title.classList.add('title');

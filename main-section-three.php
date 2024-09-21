@@ -8,6 +8,8 @@ while ($row = mysqli_fetch_assoc($result)) {
     $onderzoeken[] = $row;
 }
 
+
+print_r($onderzoeken)
 ?>
 
 

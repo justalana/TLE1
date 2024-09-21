@@ -8,8 +8,8 @@
     </div>
 
     <div class="nav-bar-middle">
-        <a href="#">Home</a>
-        <a href="#">Soorten Onderzoek</a>
+        <a href="index.php">Home</a>
+        <a href="alle-onderzoeken.php">Soorten Onderzoek</a>
         <a href="#">Over ons</a>
         <a href="#">Vergoeding</a>
     </div>
