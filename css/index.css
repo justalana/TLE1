@@ -1,14 +1,11 @@
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Kanit, 'sans-serif';
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
 }
-
-header {
-}
-
 
 nav {
     display: flex;
@@ -18,29 +15,211 @@ nav {
     padding: 2vh 2vw;
 }
 
+.nav-bar-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-left h2 {
+    letter-spacing: 4px;
+
+}
+
 .nav-bar-left img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 .nav-bar-middle {
     display: flex;
-    gap: 3vw;
+    gap: 5vw;
 }
 
-nav a {
+nav a, .divLeft a {
+    align-items: center;
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    background: #92BFEE;
+    padding: 10px 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    right: 0;
+    padding-right: 16vw;
+    font-style: italic;
+    letter-spacing: 4px;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    padding: 4vh 15vw;
+}
+
+.divLeft a {
+    display: block;
+    margin: 0 auto;
+    width: 15vw;
+}
+
+header section img {
+    width: 250px;
+    height: 250px;
 }
 
 
-/*.title {*/
-/*    font-size: 24px;*/
-/*    font-weight: bold;*/
-/*    margin-bottom: 20px;*/
-/*}*/
+.bar {
+    display: flex;
+    justify-content: right;
+    background: #92BFEE;
+    height: 1px;
+    margin: 0 2vw;
+}
 
-/*.text {*/
-/*    line-height: 1.6;*/
-/*}*/
+/* Hier begin de main sections */
+#onze-specialisten-cards, #deelnemers-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 7vw;
+    gap: 6vw;
+}
+
+#onze-specialisten h1, #onderzoek-deelnemers h1, #meest-gekozen-onderzoeken h1 {
+    font-size: 3vw;
+    text-align: center;
+}
+
+#onze-specialisten img, #onderzoek-deelnemers img, #section-article img{
+    width: 250px;
+}
+
+.specialisten-card h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deelnemer-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deelnemer-card h2, .deelnemer-card p, .footer-div h2, .footer-div p, .terms-condition h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#gekozen-onderzoeken {
+    display:flex;
+    justify-content: space-between;
+    gap: 3vw;
+    padding: 5vh 2vw;
+}
+
+.gekozen-onderzoek-card {
+    display: flex;
+    flex-direction: column;
+    background: #92BFEE;
+    padding: 4vh 1vw;
+}
+
+.gekozen-onderzoek-card h2 {
+    text-align: center;
+}
+
+.gekozen-onderzoek-card-middle {
+    display: flex;
+    gap: 15px;
+    width: 250px;
+}
+
+.gekozen-onderzoek-card a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background: #B91029;
+    padding: 6px 5px;
+}
+
+.alle-onderzoeken {
+    display: flex;
+    justify-content: right;
+    background: #92BFEE;
+    color: black;
+    font-weight: bold;
+    padding: 6px 5px;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer-container img {
+    width: 200px;
+    height: 200px;
+}
+
+.terms-condition {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.terms-condition a {
+    text-decoration: none;
+    color: #000000;
+    align-items: center;
+    margin: 0;
+    padding: 4px;
+}
+
+
+
+/* De styling van de pagina alle-onderzoeken.php*/
+#headerMainDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:50%;
+    margin:0 auto;
+}
+main input{
+    margin: 10vh 2vw 0;
+}
+#alle-onderzoeken{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 3vw;
+    padding: 5vh 2vw;
+}
+#section-article-cards {
+    display: flex;
+    flex-direction: column;
+    background: #92BFEE;
+    padding: 4vh 1vw;
+
+}
+
+/* De styling van geselecteerde onderzoek.php*/
+#header-geselecteerderde-onderzoek{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
