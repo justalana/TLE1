@@ -64,12 +64,12 @@
 .exp-container {
     display: flex;
     justify-content: center ;
-    padding: 5vh 0vw;
+    padding: 5vh 2vw;
+    gap: 50px;
 }
 
 .exp-box {
-    width: 35%;
-    margin: 1vw;
+    /*margin: 2vw;*/
     background-color: #92BFEE;
     border-radius: 25px;
     padding: 10px;
