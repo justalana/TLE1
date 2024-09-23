@@ -49,7 +49,24 @@ mysqli_close($db);
     <h1>Voltooide onderzoeken</h1>
     <div class="exp-container">
         <div class="exp-box">
-
+            <h2>Experiment1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="view-exp">Bekijk Onderzoek</button>
+        </div>
+        <div class="exp-box">
+            <h2>Experiment2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="view-exp">Bekijk Onderzoek</button>
+        </div>
+        <div class="exp-box">
+            <h2>Experiment3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="view-exp">Bekijk Onderzoek</button>
+        </div>
+        <div class="exp-box">
+            <h2>Experiment4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button class="view-exp">Bekijk Onderzoek</button>
         </div>
 
     </div>
