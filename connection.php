@@ -1,13 +1,15 @@
 <?php
 
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "tle1";
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$db = 'TLE1';
 
-$db = mysqli_connect($host, $user, $password, $database)
-or die("Error: " . mysqli_connect_error());
+// Create the connection
+$database = mysqli_connect($host, $user, $pass, $db) or die("Connection failed: " . mysqli_connect_error());
 
-?>
-
+// Check the connection
+//if (!$conn) {
+//    die("Connection failed: " . mysqli_connect_error());
+//}
 
