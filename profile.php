@@ -1,16 +1,16 @@
 <?php
-/** @var mysqli $db */
+/** @var mysqli $database */
 require_once 'connection.php';
 
 // Retrieve user information based on the user ID stored in the session
 $query = 'SELECT * FROM users WHERE ID = 1';
-$result = mysqli_query($db, $query)
-or die('Error ' . mysqli_error($db) . ' with query ' . $query);
+$result = mysqli_query($database, $query)
+or die('Error ' . mysqli_error($database) . ' with query ' . $query);
 
 //save book details in array
 $user_info = mysqli_fetch_assoc($result);
 
-mysqli_close($db);
+mysqli_close($database);
 ?>
 <!doctype html>
 <html lang="en">
@@ -19,10 +19,13 @@ mysqli_close($db);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Profile</title>
     <link rel="stylesheet" type="text/css" href="css/profile.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
-<nav>
-    <p>navbar</p>
-</nav>
+<header>
+    <?php
+    require_once 'nav-bar.php';
+    ?>
+</header>
 <body>
 <div class="user-container">
     <div class="user-box">
