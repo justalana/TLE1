@@ -57,7 +57,7 @@ function loadSearchFilter() {
     searchFilterForm.appendChild(searchFilterLabel)
     searchFilterForm.appendChild(searchFilterInput)
     searchFilterDiv.appendChild(searchFilterForm)
-    mainSelector.appendChild(searchFilterDiv)
+    mainSelector.prepend(searchFilterDiv)
 }
     loadSearchFilter()
 

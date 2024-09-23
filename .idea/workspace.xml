@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cc2b449-1deb-491c-9f18-417613709880" name="Changes" comment="Geexperimenteerd met Javascript. JSON bestand gebruikt om de data te laden&#10;&#10;PHP gebruikt om data te laden">
+    <list default="true" id="3cc2b449-1deb-491c-9f18-417613709880" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/onderzoek.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/alle-onderzoeken.php" beforeDir="false" afterPath="$PROJECT_DIR$/alle-onderzoeken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/connection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/alle-onderzoeken.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/alle-onderzoeken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-section-three.php" beforeDir="false" afterPath="$PROJECT_DIR$/main-section-three.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/js/alle-onderzoeken.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/js/index.js" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/main-section-three.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/onderzoek.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -65,6 +71,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -90,6 +101,9 @@
       <workItem from="1726728846826" duration="12805000" />
       <workItem from="1726912300792" duration="17305000" />
       <workItem from="1726936564681" duration="676000" />
+      <workItem from="1727073905775" duration="1442000" />
+      <workItem from="1727075703350" duration="1317000" />
+      <workItem from="1727080533838" duration="10709000" />
     </task>
     <task id="LOCAL-00001" summary="push test">
       <option name="closed" value="true" />
@@ -135,16 +149,5 @@
     <MESSAGE value="Database gefixed met fouten + Homepage section 3 afgemaakt" />
     <MESSAGE value="Geexperimenteerd met Javascript. JSON bestand gebruikt om de data te laden&#10;&#10;PHP gebruikt om data te laden" />
     <option name="LAST_COMMIT_MESSAGE" value="Geexperimenteerd met Javascript. JSON bestand gebruikt om de data te laden&#10;&#10;PHP gebruikt om data te laden" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/alle-onderzoeken.php</url>
-          <line>35</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

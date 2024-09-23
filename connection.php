@@ -5,7 +5,7 @@ $pass = '';
 $db = 'TLE1';
 
 // Create the connection
-$conn = mysqli_connect($host, $user, $pass, $db) or die("Connection failed: " . mysqli_connect_error());
+$database = mysqli_connect($host, $user, $pass, $db) or die("Connection failed: " . mysqli_connect_error());
 
 // Check the connection
 //if (!$conn) {

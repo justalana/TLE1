@@ -1,7 +1,7 @@
 <?php
 require_once 'connection.php';
 $query = "SELECT * FROM experiments";
-$result = mysqli_query($conn, $query) or die(mysqli_error($conn));
+$result = mysqli_query($database, $query) or die(mysqli_error($database));
 
 $onderzoeken = [];
 while ($row = mysqli_fetch_assoc($result)) {
@@ -41,7 +41,7 @@ while ($row = mysqli_fetch_assoc($result)) {
                     <p>datum 14/09 </p>
                     <p><?= $onderzoek['explenation'] ?></p>
                 </div>
-                <a href="">Aanmelden</a>
+                <a href="onderzoek.php?id=<?=$onderzoek['id']?>">Aanmelden</a>
             </div>
         <?php } ?>
     </section>
