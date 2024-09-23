@@ -68,7 +68,6 @@ shuffle($onderzoeken)
 
     <section id="alle-onderzoeken">
         <?php for ($i = 0; $i < count($onderzoeken) - 7 ; $i++) { ?>
-
                 <div class="gekozen-onderzoek-card">
                     <h2><?= $onderzoeken[$i]['experiment'] ?></h2>
                     <h2>€<?= $onderzoeken[$i]['money'] ?></h2>
