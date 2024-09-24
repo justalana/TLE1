@@ -31,29 +31,36 @@ if (!empty($appointments)) {
     file_put_contents($filePath, $response);
 }
 
-
-if (!empty($_POST['selectedDate'])) {
+if (!empty($_POST['submit'])) {
+    unset($_POST['submit']);
     $date = mysqli_escape_string($conn, $_POST['selectedDate']);
-}
+    $name = mysqli_escape_string($conn, $_POST['firstName']);
+    $lastName = mysqli_escape_string($conn, $_POST['lastName']);
+    $email = mysqli_escape_string($conn, $_POST['email']);
+    $phone = mysqli_escape_string($conn, $_POST['phoneNumber']);
+    $gender = mysqli_escape_string($conn, $_POST['gender']);
+    $sideNotes = "TBD";
 
-if (isset($_POST['submit'])) {
-    if (isset($date)) {
+
+    require_once "afspraak-errors.php";
+
+    if (empty($errors)) {
         $checkQuery = "SELECT * FROM `appointments` WHERE `date` = '$date'";
         $checkResult = mysqli_query($conn, $checkQuery);
 
         if (mysqli_num_rows($checkResult) > 0) {
             echo "Er is al een afspraak voor deze datum.";
         } else {
-            $postQuery = "INSERT INTO `appointments`(`user_ID`, `date`) VALUES ('3','$date')";
+            $postQuery = "INSERT INTO `appointments`(`user_ID`, `date`, `name`, `last_name`, `e-mail`, `phone`, `gender`, `side_notes`) VALUES ('1','$date','$name','$lastName','$email','$phone','$gender','$sideNotes')";
             $postResult = mysqli_query($conn, $postQuery);
             if ($postResult) {
-                echo "Afspraak succesvol ingepland."; // Success message
+                //succes
             } else {
-                echo "Er is een fout opgetreden bij het inplannen van de afspraak."; // Error message
+                //error
             }
-        } header("refresh:0");
+        }
+        header("refresh:0.5");
     }
-    header("refresh:0");
 }
 
 mysqli_close($conn);
@@ -82,14 +89,46 @@ mysqli_close($conn);
 
 <main>
     <form method="post">
-        <div class="left">
-                <label for="firstName">Voornaam</label>
-                <input type="text" id="firstName" name="firstName" value="">
+        <div class="left-majo">
+            <div class="left">
+                <div class="horizontal">
+                    <div class="inputs">
+                        <label for="firstName">Voornaam</label>
+                        <input type="text" id="firstName" name="firstName" value="<?= $name ?? '' ?>" placeholder="Naam">
+                    </div>
 
+                    <div class="inputs">
+                        <label for="lastName">Achternaam</label>
+                        <input type="text" id="lastName" name="lastName" value="<?= $lastName ?? '' ?>" placeholder="Achternaam">
+                    </div>
+                </div>
+
+                <div class="stretch inputs" >
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" value="<?= $email ?? '' ?>" placeholder="E-mail">
+                </div>
+
+                <div class="horizontal">
+                    <div class="inputs">
+                        <label for="phoneNumber">Telefoonnummer</label>
+                        <input type="number" id="phoneNumber" name="phoneNumber" value="<?= $phone ?? '' ?>" placeholder="Telefoonnummer">
+                    </div>
+
+                    <div class="inputs">
+                        <label for="gender">Geslacht</label>
+                        <input type="text" id="gender" name="gender" value="<?= $gender ?? '' ?>" placeholder="Geslacht">
+                    </div>
+                </div>
                 <input type="hidden" id="selectedDate" name="selectedDate" value="">
-                <input type="submit" id="submit" name="submit">
+            </div>
+            <?php if (!empty($errors)): ?>
+                <ul class="errors">
+                    <?php foreach ($errors as $error): ?>
+                        <li><?= $error; ?></li>
+                    <?php endforeach; ?>
+                </ul>
+            <?php endif; ?>
         </div>
-
         <div class="right">
             <div class="calendar-container">
                 <div class="calendar-header">
@@ -116,9 +155,12 @@ mysqli_close($conn);
                     </tbody>
                 </table>
             </div>
+            <input type="submit" id="submit" name="submit" value="Bevestig afspraak">
         </div>
+
     </form>
     <script defer src="js/calender.js"></script>
+
 </main>
 
 <footer>

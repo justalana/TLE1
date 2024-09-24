@@ -165,10 +165,9 @@ const generateCalendar = () => {
         dateToSelect.classList.add("selected")
     }
     fetchRequest()
+
 }
 
-// Roep de functie aan om de kalender te genereren
-generateCalendar();
 
 //Function om een datum te klikken en daarna de waarde daarvan in de hidden form field op te slaan zodat
 //PHP het later kan ophalen.
@@ -193,7 +192,7 @@ const grayAppointments = (appointments) => {
         const splitDate = appointment.date.split("-");
 
         if (`${year}` === splitDate[0] && `${month+1}` === splitDate[1] || `${year}` === splitDate[0] && `0${month+1}` === splitDate[1]) {
-            //Check of de 1e nummer van de day value een 0 is (00-09)
+            //Check of het 1e nummer van de day value een 0 is (00-09)
             if (Array.from(splitDate[2])[0] == 0) {
                 tempDate = splitDate[2].slice(0)[1];
             }
@@ -216,3 +215,6 @@ const grayAppointments = (appointments) => {
         }
     });
 }
+
+// Roep de functie aan om de kalender te genereren
+generateCalendar();
