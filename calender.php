@@ -1,12 +1,18 @@
 <?php
 require "connection.php";
 session_start();
+/** @var mysqli $conn */
 
-//zet dit later naar de ID van de ingelogte gebruiker wanneer sessions werkend zijn.
-//$name = $_SESSION['name'];
-//
-//$userDataQuery = "SELECT * FROM `users` WHERE id = $sessionUserID";
-//$userDataResult = mysqli_query($conn, $userDataQuery);
+$loggedUser = $_SESSION['user'] ?? "";
+
+if ($loggedUser != "") {
+    $loadedUserID = $loggedUser['id'];
+    $name = $loggedUser['first_name'];
+    $lastName = $loggedUser['last_name'];
+    $email = $loggedUser['email'];
+    $phone = $loggedUser['phone_number'];
+//    $loadedGender = $loggedUser['gender'];
+}
 
 
 $loadAppointmentsQuery = "SELECT `date` FROM `appointments`";
@@ -18,14 +24,14 @@ while ($row = mysqli_fetch_assoc($loadAppointmentsResult)) {
 
 if (!empty($appointments)) {
     $response = json_encode([
-        'posts' => $appointments,
+        'posts' => $appointments
     ], JSON_PRETTY_PRINT);
 
     $filePath = 'js/filleddates.json';
     file_put_contents($filePath, $response);
 } else {
     $response = json_encode([
-        'posts' => null,
+        'posts' => null
     ], JSON_PRETTY_PRINT);
     $filePath = 'js/filleddates.json';
     file_put_contents($filePath, $response);
@@ -48,18 +54,14 @@ if (!empty($_POST['submit'])) {
         $checkQuery = "SELECT * FROM `appointments` WHERE `date` = '$date'";
         $checkResult = mysqli_query($conn, $checkQuery);
 
-        if (mysqli_num_rows($checkResult) > 0) {
-            echo "Er is al een afspraak voor deze datum.";
-        } else {
+        if (mysqli_num_rows($checkResult) <= 0) {
             $postQuery = "INSERT INTO `appointments`(`user_ID`, `date`, `name`, `last_name`, `e-mail`, `phone`, `gender`, `side_notes`) VALUES ('1','$date','$name','$lastName','$email','$phone','$gender','$sideNotes')";
             $postResult = mysqli_query($conn, $postQuery);
             if ($postResult) {
                 //succes
-            } else {
-                //error
             }
         }
-        header("refresh:0.5");
+        header('Location: index.php');
     }
 }
 
