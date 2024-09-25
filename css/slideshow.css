@@ -1,0 +1,64 @@
+.bottom {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.button {
+    width: 15px;
+    height:15px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width:83vw;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    transition: all 1s ease;
+}
+
+#title {
+    position: absolute;
+    color: white;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 450px;
+    left: 450px;
+}
+
+#description {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 350px;
+    left: 100px;
+}
+
+#money {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 100px;
+    left: 100px;
+}
+
+.arrow {
+    width:50px;
+    height:50px;
+    cursor:pointer;
+}
