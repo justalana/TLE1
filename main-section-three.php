@@ -1,7 +1,7 @@
 <?php
 require_once 'connection.php';
 $query = "SELECT * FROM experiments";
-$result = mysqli_query($database, $query) or die(mysqli_error($conn));
+$result = mysqli_query($conn, $query);
 
 $onderzoeken = [];
 while ($row = mysqli_fetch_assoc($result)) {
@@ -21,7 +21,7 @@ shuffle($onderzoeken)
             <h2>€<?=  $onderzoeken[$i]['money']?></h2>
             <div class="gekozen-onderzoek-card-middle">
                 <p>datum <?php echo ($i * 4) - 1 ?>/09 </p>
-                <p><?= $onderzoeken[$i]['explenation']?></p>
+                <p><?= $onderzoeken[$i]['explanation']?></p>
             </div>
             <a href="onderzoek.php?id=<?= $onderzoeken[$i]['id']?>">Aanmelden</a>
         </div>

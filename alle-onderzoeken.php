@@ -2,7 +2,7 @@
 require_once 'connection.php';
 
 $query = "SELECT * FROM experiments";
-$result = mysqli_query($database, $query) or die(mysqli_error($database));
+$result = mysqli_query($conn, $query);
 
 
 $onderzoeken = [];
@@ -53,7 +53,7 @@ file_put_contents($location, $encoded_data);
                 <h2>€<?= $onderzoek['money'] ?></h2>
                 <div class="gekozen-onderzoek-card-middle">
                     <p>datum 14/09 </p>
-                    <p><?= $onderzoek['explenation'] ?></p>
+                    <p><?= $onderzoek['explanation'] ?></p>
                 </div>
                 <a href="onderzoek.php?id=<?=$onderzoek['id']?>">Aanmelden</a>
             </div>

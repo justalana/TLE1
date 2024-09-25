@@ -7,7 +7,7 @@ require_once 'connection.php';
 // Haal de informatie op uit de database met een query
 
 $query = "SELECT * FROM experiments WHERE id = '$id'";
-$result = mysqli_query($database, $query) or die(mysqli_error($database));
+$result = mysqli_query($conn, $query) or die(mysqli_error($database));
 
 $onderzoek = [];
 while ($row = mysqli_fetch_assoc($result)) {
@@ -15,7 +15,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 }
 
 $queryAllInfo = "SELECT * FROM experiments ";
-$resultAllInfo = mysqli_query($database, $queryAllInfo) or die(mysqli_error($database));
+$resultAllInfo = mysqli_query($conn, $queryAllInfo);
 
 $onderzoeken = [];
 while ($row = mysqli_fetch_assoc($resultAllInfo)) {
@@ -73,7 +73,7 @@ shuffle($onderzoeken)
                     <h2>€<?= $onderzoeken[$i]['money'] ?></h2>
                     <div class="gekozen-onderzoek-card-middle">
                         <p>datum 14/09 </p>
-                        <p><?= $onderzoeken[$i]['explenation'] ?></p>
+                        <p><?= $onderzoeken[$i]['explanation'] ?></p>
                     </div>
                     <a href="onderzoek.php?id=<?=$onderzoeken[$i]['id']?>">Aanmelden</a>
                 </div>

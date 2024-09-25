@@ -1,1 +1,92 @@
-{"0":{"experiment":"Diabetesonderzoek","explenation":"Onderzoek naar de effecten van diabetes op het lichaam en de ontwikkeling van nieuwe behandelingen.","money":"8234","id":"4","gender":"man","research_days":"4","comeback_days":"1"},"1":{"experiment":"Kankeronderzoek","explenation":"Onderzoek naar de oorzaken en behandelingen van verschillende soorten kanker.","money":"6435","id":"5","gender":"man","research_days":"5","comeback_days":"1"},"2":{"experiment":"Hart- en vaatziektenonderzoek\r\n","explenation":"Onderzoek naar de oorzaken en behandelingen van hart- en vaatziekten, zoals hartinfarcten en beroertes.","money":"1875","id":"6","gender":"vrouw","research_days":"10","comeback_days":"2"},"3":{"experiment":"Reumatische aandoeningenonderzoek","explenation":"Onderzoek naar de oorzaken en behandelingen van reumatische aandoeningen, zoals reumato\u00efde artritis.","money":"3179","id":"7","gender":"vrouw","research_days":"3","comeback_days":"1"},"4":{"experiment":"Neurologisch onderzoek\r\n","explenation":"Onderzoek naar de oorzaken en behandelingen van neurologische aandoeningen, zoals multiple sclerose en Parkinson.","money":"6751","id":"8","gender":"man","research_days":"9","comeback_days":"2"},"5":{"experiment":"Chronische obstructieve longziekte (COPD) onderzoek","explenation":"Onderzoek naar de oorzaken en behandelingen van COPD.","money":"5891","id":"9","gender":"man","research_days":"15","comeback_days":"3"},"6":{"experiment":"Nierziektenonderzoek","explenation":"Onderzoek naar de oorzaken en behandelingen van nierziekten, zoals nierfalen.","money":"2895","id":"10","gender":"vrouw","research_days":"6","comeback_days":"0"},"7":{"experiment":"Leverziektenonderzoek","explenation":"Onderzoek naar de oorzaken en behandelingen van leverziekten, zoals hepatitis.","money":"2895","id":"11","gender":"man","research_days":"1","comeback_days":"0"},"8":{"experiment":"Auto-immuunziektenonderzoek\r\n","explenation":"Onderzoek naar de oorzaken en behandelingen van auto-immuunziekten, zoals lupus.","money":"2895","id":"12","gender":"man","research_days":"7","comeback_days":"3"},"9":{"experiment":"Chronische pijnonderzoek\r\n","explenation":"Onderzoek naar de oorzaken en behandelingen van chronische pijn.","money":"2895","id":"13","gender":"vrouw","research_days":"21","comeback_days":"0"}}
+{
+  "0": {
+    "experiment": "Diabetesonderzoek",
+    "explanation": "Onderzoek naar de effecten van diabetes op het lichaam en de ontwikkeling van nieuwe behandelingen.",
+    "money": "8234",
+    "id": "4",
+    "gender": "man",
+    "research_days": "4",
+    "comeback_days": "1"
+  },
+  "1": {
+    "experiment": "Kankeronderzoek",
+    "explenation": "Onderzoek naar de oorzaken en behandelingen van verschillende soorten kanker.",
+    "money": "6435",
+    "id": "5",
+    "gender": "man",
+    "research_days": "5",
+    "comeback_days": "1"
+  },
+  "2": {
+    "experiment": "Hart- en vaatziektenonderzoek\r\n",
+    "explenation": "Onderzoek naar de oorzaken en behandelingen van hart- en vaatziekten, zoals hartinfarcten en beroertes.",
+    "money": "1875",
+    "id": "6",
+    "gender": "vrouw",
+    "research_days": "10",
+    "comeback_days": "2"
+  },
+  "3": {
+    "experiment": "Reumatische aandoeningenonderzoek",
+    "explenation": "Onderzoek naar de oorzaken en behandelingen van reumatische aandoeningen, zoals reumato\u00efde artritis.",
+    "money": "3179",
+    "id": "7",
+    "gender": "vrouw",
+    "research_days": "3",
+    "comeback_days": "1"
+  },
+  "4": {
+    "experiment": "Neurologisch onderzoek\r\n",
+    "explenation": "Onderzoek naar de oorzaken en behandelingen van neurologische aandoeningen, zoals multiple sclerose en Parkinson.",
+    "money": "6751",
+    "id": "8",
+    "gender": "man",
+    "research_days": "9",
+    "comeback_days": "2"
+  },
+  "5": {
+    "experiment": "Chronische obstructieve longziekte (COPD) onderzoek",
+    "explenation": "Onderzoek naar de oorzaken en behandelingen van COPD.",
+    "money": "5891",
+    "id": "9",
+    "gender": "man",
+    "research_days": "15",
+    "comeback_days": "3"
+  },
+  "6": {
+    "experiment": "Nierziektenonderzoek",
+    "explenation": "Onderzoek naar de oorzaken en behandelingen van nierziekten, zoals nierfalen.",
+    "money": "2895",
+    "id": "10",
+    "gender": "vrouw",
+    "research_days": "6",
+    "comeback_days": "0"
+  },
+  "7": {
+    "experiment": "Leverziektenonderzoek",
+    "explenation": "Onderzoek naar de oorzaken en behandelingen van leverziekten, zoals hepatitis.",
+    "money": "2895",
+    "id": "11",
+    "gender": "man",
+    "research_days": "1",
+    "comeback_days": "0"
+  },
+  "8": {
+    "experiment": "Auto-immuunziektenonderzoek\r\n",
+    "explenation": "Onderzoek naar de oorzaken en behandelingen van auto-immuunziekten, zoals lupus.",
+    "money": "2895",
+    "id": "12",
+    "gender": "man",
+    "research_days": "7",
+    "comeback_days": "3"
+  },
+  "9": {
+    "experiment": "Chronische pijnonderzoek\r\n",
+    "explenation": "Onderzoek naar de oorzaken en behandelingen van chronische pijn.",
+    "money": "2895",
+    "id": "13",
+    "gender": "vrouw",
+    "research_days": "21",
+    "comeback_days": "0"
+  }
+}
