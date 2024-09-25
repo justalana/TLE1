@@ -1,6 +1,4 @@
 <?php
-
-
 ?>
 <nav>
     <div class="nav-bar-middle">
