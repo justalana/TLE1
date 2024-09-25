@@ -4,12 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cc2b449-1deb-491c-9f18-417613709880" name="Changes" comment="Css styling homepage + databases en webservice testing">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alle-onderzoeken.php" beforeDir="false" afterPath="$PROJECT_DIR$/alle-onderzoeken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/alldata.json" beforeDir="false" afterPath="$PROJECT_DIR$/js/alldata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/alle-onderzoeken.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/alle-onderzoeken.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,24 +44,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Branch__Roshan&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mariadb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -135,13 +118,7 @@
       <option name="project" value="LOCAL" />
       <updated>1726934752564</updated>
     </task>
-    <task id="LOCAL-00005" summary="Css styling homepage + databases en webservice testing">
-      <option name="closed" value="true" />
-      <created>1727252068330</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1727252068330</updated>
+
     </task>
     <option name="localTasksCounter" value="6" />
     <servers />
@@ -154,7 +131,5 @@
     <MESSAGE value="php homepage basis toegevoegd met php en javascript." />
     <MESSAGE value="Database gefixed met fouten + Homepage section 3 afgemaakt" />
     <MESSAGE value="Geexperimenteerd met Javascript. JSON bestand gebruikt om de data te laden&#10;&#10;PHP gebruikt om data te laden" />
-    <MESSAGE value="Css styling homepage + databases en webservice testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Css styling homepage + databases en webservice testing" />
   </component>
 </project>
