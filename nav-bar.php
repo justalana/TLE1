@@ -8,7 +8,7 @@
             <img src="img/vitalislogo.png" alt="Logo">
         </div>
         <a href="#">Over ons</a>
-        <a href="#" class="button">Aanmelden</a>
+        <a href="register.php" class="button">Aanmelden</a>
 
     </div>
 </nav>
