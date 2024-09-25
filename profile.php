@@ -1,16 +1,15 @@
 <?php
-/** @var mysqli $database */
+/** @var mysqli $conn */
 require_once 'connection.php';
 
 // Retrieve user information based on the user ID stored in the session
 $query = 'SELECT * FROM users WHERE ID = 1';
-$result = mysqli_query($database, $query)
-or die('Error ' . mysqli_error($database) . ' with query ' . $query);
+$result = mysqli_query($conn, $query);
 
 //save book details in array
 $user_info = mysqli_fetch_assoc($result);
 
-mysqli_close($database);
+mysqli_close($conn);
 ?>
 <!doctype html>
 <html lang="en">

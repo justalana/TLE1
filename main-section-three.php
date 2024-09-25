@@ -1,7 +1,8 @@
 <?php
+/** @var mysqli $conn */
 require_once 'connection.php';
 $query = "SELECT * FROM experiments";
-$result = mysqli_query($database, $query) or die(mysqli_error($conn));
+$result = mysqli_query($conn, $query);
 
 $onderzoeken = [];
 while ($row = mysqli_fetch_assoc($result)) {
