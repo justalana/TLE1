@@ -53,7 +53,7 @@ print_r($insuranceData);
         <img id="user_profile" src="img/user_prof.png" alt="profile image">
         <h2>Beginnende Tester</h2>
         <img src="img/medal.png" alt="medal image">
-        <p id="debt">-€<?= htmlentities($insuranceData['dept'])?>,-</p>
+        <p id="debt">-€<?= htmlentities($user_info['dept'])?>,-</p>
         <button id="edit_prof">Profiel Bewerken</button>
     </div>
 </div>
