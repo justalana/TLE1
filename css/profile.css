@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #2C284A;
+}
+
+.category {
+    color: #B91029;
+}
+
+.user-container {
+    display: flex;
+    justify-content: center ;
+    padding: 5vh 0vw;
+    border-bottom: 3px solid #2C284A;
+}
+
+.user-box {
+    width: 35%;
+    margin: 1vw;
+}
+
+#user_name {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#image_box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #92BFEE;
+    border-radius: 25px;
+}
+
+#user_profile {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: #FFF5F5;
+    padding: 20px;
+    margin: 25px;
+}
+
+#debt {
+    color: #B91029;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+#edit_prof {
+    background-color: #FFF5F5;
+    border-color: #FFF5F5;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.exp-container {
+    display: flex;
+    justify-content: center ;
+    padding: 5vh 2vw;
+    gap: 50px;
+}
+
+.exp-box {
+    /*margin: 2vw;*/
+    background-color: #92BFEE;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.view-exp {
+    background-color: #B91029;
+    border-color: #B91029;
+    color: #FFF5F5;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+}

@@ -216,3 +216,10 @@ main input{
     padding: 4vh 1vw;
 
 }
+
+/* De styling van geselecteerde onderzoek.php*/
+#header-geselecteerderde-onderzoek{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
