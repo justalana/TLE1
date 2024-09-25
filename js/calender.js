@@ -1,3 +1,5 @@
+window.addEventListener("load", () => init())
+
 let date = new Date();
 const currentYear = date.getFullYear()
 const currentMonth = date.getMonth();
@@ -22,15 +24,8 @@ const months = [
     "December"
 ];
 
-const fetchRequest = () => {
-    fetch('js/filleddates.json')
-        .then(response => response.json()) // Parse de JSON respons
-        .then(data => {
-            grayAppointments(data.posts); // Bijvoorbeeld een functie om afspraken op de kalender te markeren
-        })
-        .catch(error => {
-            console.error('Er is een fout opgetreden bij het laden van de afspraken:', error);
-        });
+function init() {
+    generateCalendar();
 }
 
 selectedMonth.innerHTML = `${months[month]}`;
@@ -181,6 +176,7 @@ const setDay = (day) => {
         tempSelectedElement.classList.remove("selected")
     }
 
+
     let selectedElement = document.getElementById(day)
     selectedElement.classList.add("selected")
     dateValues = [year, month, day];
@@ -216,5 +212,17 @@ const grayAppointments = (appointments) => {
     });
 }
 
+const fetchRequest = () => {
+    fetch('js/filleddates.json')
+        .then(response => response.json()) // Parse de JSON respons
+        .then(data => {
+            grayAppointments(data.posts); // Bijvoorbeeld een functie om afspraken op de kalender te markeren
+        })
+        .catch(error => {
+            console.error('Er is een fout opgetreden bij het laden van de afspraken:', error);
+        });
+}
+
 // Roep de functie aan om de kalender te genereren
-generateCalendar();
+init()
+

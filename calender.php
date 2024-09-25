@@ -6,12 +6,14 @@ session_start();
 $loggedUser = $_SESSION['user'] ?? "";
 
 if ($loggedUser != "") {
-    $loadedUserID = $loggedUser['id'];
+    $userID = $loggedUser['id'];
     $name = $loggedUser['first_name'];
     $lastName = $loggedUser['last_name'];
     $email = $loggedUser['email'];
     $phone = $loggedUser['phone_number'];
 //    $loadedGender = $loggedUser['gender'];
+} else {
+    header("location:login.php");
 }
 
 
@@ -55,7 +57,7 @@ if (!empty($_POST['submit'])) {
         $checkResult = mysqli_query($conn, $checkQuery);
 
         if (mysqli_num_rows($checkResult) <= 0) {
-            $postQuery = "INSERT INTO `appointments`(`user_ID`, `date`, `name`, `last_name`, `e-mail`, `phone`, `gender`, `side_notes`) VALUES ('1','$date','$name','$lastName','$email','$phone','$gender','$sideNotes')";
+            $postQuery = "INSERT INTO `appointments`(`user_ID`, `date`, `name`, `last_name`, `e-mail`, `phone`, `gender`, `side_notes`) VALUES ('$userID','$date','$name','$lastName','$email','$phone','$gender','$sideNotes')";
             $postResult = mysqli_query($conn, $postQuery);
             if ($postResult) {
                 //succes
