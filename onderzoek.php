@@ -59,7 +59,7 @@ shuffle($onderzoeken)
             <?php } else { ?>
                 <h3><?= $index['comeback_days'] ?></h3>
             <?php } ?>
-            <a href="">Meld aan</a>
+            <a href="calender.php">Meld aan</a>
         </div>
         <?php } ?>
     </div>
