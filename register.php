@@ -7,6 +7,10 @@ $dataList = ['voornaam', 'achternaam', 'email', 'telefoonnummer', 'wachtwoord', 
     'tussenvoegsels', 'straat', 'stad', 'land', 'bloedgroep', 'lengte', 'gewicht', 'BMI'];
 
 $BMI_value = ''; // initialize $BMI_value to an empty string
+if (isset($_POST['bmi'])) {
+    $BMI_value = $_POST['bmi'];
+    // Update the database or perform other actions here
+}
 
 if (isset($_POST['submit'])) {
     $errors = array();
@@ -118,18 +122,23 @@ if (isset($_POST['submit'])) {
         <?php foreach ($dataList as $data) { ?>
             <div class="<?php echo in_array($data, ['telefoonnummer', 'email', 'wachtwoord', 'bloedgroep', 'straat']) ? 'flex-item full-width' : (in_array($data, ['gewicht', 'lengte', 'huisnummer', 'tussenvoegsels']) ? 'flex-item quarter-width' : 'flex-item half-width'); ?>">
                 <?php if (in_array($data, ['telefoonnummer', 'lengte', 'gewicht', 'huisnummer'])) { ?>
-                    <input class="input" id="<?= $data ?>" type="number" name="<?= $data ?>" value="<?= $$data ?? '' ?>"
-                           placeholder="<?= $data ?>"/>
+
+                    <input class="input" id="<?= $data ?>" type="number" name="<?= $data ?>" value="<?= $$data ?? '' ?>" placeholder="<?= $data ?>"/>
+
                 <?php } else if ($data == 'BMI') { ?>
-                    <input class="input" id="BMI" type="text" name="BMI" value="<?= $BMI_value ?>" placeholder="BMI"
-                           readonly>
+
+                    <input class="input" id="bmi" type="text" name="bmi" value="<?= $BMI_value ?>" placeholder="BMI" readonly>
+
                 <?php } else if ($data == 'wachtwoord') { ?>
-                    <input class="input" id="<?= $data ?>" type="password" name="<?= $data ?>"
-                           placeholder="<?= $data ?>">
+
+                    <input class="input" id="<?= $data ?>" type="password" name="<?= $data ?>" placeholder="<?= $data ?>">
+
                 <?php } else { ?>
-                    <input class="input" id="<?= $data ?>" type="text" name="<?= $data ?>" value="<?= $$data ?? '' ?>"
-                           placeholder="<?= $data ?>"/>
+
+                    <input class="input" id="<?= $data ?>" type="text" name="<?= $data ?>" value="<?= $$data ?? '' ?>" placeholder="<?= $data ?>"/>
+
                 <?php } ?>
+
                 <p class="help">
                     <?= $errors[$data] ?? '' ?>
                 </p>

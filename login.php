@@ -80,11 +80,18 @@ if (isset($_POST['submit'])) {
     <p><a href="logout.php">Uitloggen</a> / <a href="index.php">Naar home</a></p>
 <?php } else { ?>
     <section class="login">
+
+        <div class="login-logo">
+            <img class="login-logo-image" src="IMG/vitalislogo.png">
+            <h1>The Company Name</h1>
+        </div>
+
         <div class="login-form-container">
+
             <form class="login-form" action="" method="post">
 
                 <h1>Welkom terug</h1>
-                <h2>vul uw gegevens in</h2>
+                <p>vul uw gegevens in</p>
 
                 <div class="login-flex-container">
                     <input class="input" id="email" type="text" name="email" value="<?= $email ?? '' ?>"
@@ -106,6 +113,8 @@ if (isset($_POST['submit'])) {
                     </p>
                     <button class="register-button" type="submit" name="submit">Inloggen</button>
                 </div>
+
+                <p>nog geen account? <a href="register.php">aanmelden</a></p>
 
             </form>
         </div>
