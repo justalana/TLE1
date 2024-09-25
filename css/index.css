@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: Kanit, 'sans-serif';
+    margin: 0;
+    padding: 0;
+    color: #2C284A;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 2vh 5vw;
+}
+
+.nav-bar-left {
+    display: flex;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+}
+
+nav img {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-bar-middle {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+nav a{
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    background: #92BFEE;
+    padding: 10px 10px;
+    width: 150px;
+    text-align: center;
+    border-radius: 25px 25px;
+    border: 2px solid #92BFEE;
+    transition: 200ms ease-in-out;
+    box-shadow: 0px 0px 10px #92BFEE;
+}
+nav a:hover{
+    color:#2C284A;
+    background: #ffffff;
+    transition: 200ms ease-in-out;
+}
+
+
+@keyframes slideInLeft {
+    0%{
+        transform: translateX(-100vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.title {
+    font-weight: 100;
+    font-style: italic;
+    text-align: right;
+    padding-right: 5vw;
+    margin-bottom:-3vh;
+    letter-spacing:15px;
+    animation: slideInLeft 2s ease-in-out ;
+
+}
+
+header section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5vh 5vw;
+    gap:50px;
+}
+
+@keyframes slideInRight {
+    0%{
+        transform: translateX(100vw);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+#headerTitle{
+    font-weight:500;
+    text-align: left;
+    letter-spacing:4px;
+    padding-left:5vw;
+    margin-bottom:-2vh;
+    animation: slideInRight 2s ease-in-out ;
+}
+
+.divRight{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.divRight h3{
+
+    font-weight: 300;
+}
+.divRight a{
+    width: 20vw;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color:white;
+    border:2px solid #92BFEE;
+    box-shadow: 0px 0px 10px #92BFEE;
+    border-radius: 25px 25px;
+    background: #92BFEE;
+    padding: 10px 5px;
+    text-align: center;
+    transition: 200ms ease-in-out;
+}
+.divRight a:hover{
+    color:#2C284A;
+    background: #ffffff;
+    transition: 200ms ease-in-out;
+}
+
+#header-banner-image{
+    width: 350px;
+    height: 350px;
+    border:5px solid #92BFEE;
+    border-radius: 50% 50%;
+    box-shadow: 0px 0px 20px #92BFEE;
+    transition: ease-in-out 500ms;
+}
+#header-banner-image:hover{
+    transition: ease-in 500ms;
+    transform:scale(1.15);
+    box-shadow: -10px 5px 20px #92BFEE;
+}
+
+
+.bar {
+    display: flex;
+    justify-content: right;
+    background: #92BFEE;
+    height: 1px;
+    margin: 0 2vw;
+}
+
+/* Hier begin de main sections */
+#onze-specialisten-cards, #deelnemers-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vh 7vw;
+    gap: 6vw;
+}
+
+#onze-specialisten h1, #onderzoek-deelnemers h1, #meest-gekozen-onderzoeken h1 {
+    font-size: 3vw;
+    text-align: center;
+}
+
+#onze-specialisten img, #onderzoek-deelnemers img, #section-article img{
+    width: 250px;
+    height:250px;
+    object-fit: contain;
+    border-radius:50%;
+}
+
+.specialisten-card h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deelnemer-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deelnemer-card h2, .deelnemer-card p, .footer-div h2, .footer-div p, .terms-condition h2 {
+    margin: 0;
+    padding: 0;
+}
+
+#gekozen-onderzoeken {
+    display:flex;
+    justify-content: space-between;
+    gap: 3vw;
+    padding: 5vh 2vw;
+}
+
+.gekozen-onderzoek-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #92BFEE;
+    padding: 4vh 1vw;
+    border-radius: 25px 25px;
+}
+
+.gekozen-onderzoek-card h2 {
+    text-align: center;
+    color: white;
+}
+
+.gekozen-onderzoek-card-middle {
+    display: flex;
+    gap: 15px;
+    width: 250px;
+    color: white;
+}
+
+.gekozen-onderzoek-card a {
+    text-align: center;
+    text-decoration: none;
+    color: #f6f6f6;
+    font-weight: bold;
+    border-radius: 25px 25px;
+    background: rgba(84, 110, 138, 0.5);
+    padding: 6px 5px;
+}
+
+.alle-onderzoeken {
+    display: flex;
+    justify-content: right;
+    background: #92BFEE;
+    color: black;
+    font-weight: bold;
+    padding: 6px 5px;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#footer-container img {
+    width: 200px;
+    height: 200px;
+}
+
+.terms-condition {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.terms-condition a {
+    text-decoration: none;
+    color: #000000;
+    align-items: center;
+    margin: 0;
+    padding: 4px;
+}
+
+
+
+/* De styling van de pagina alle-onderzoeken.php*/
+#headerMainDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:50%;
+    margin:0 auto;
+}
+main input{
+    margin: 10vh 2vw 0;
+}
+#alle-onderzoeken{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 3vw;
+    padding: 5vh 2vw;
+}
+#section-article-cards {
+    display: flex;
+    flex-direction: column;
+    background: #92BFEE;
+    padding: 4vh 1vw;
+
+}
+
+/* De styling van geselecteerde onderzoek.php*/
+#header-geselecteerderde-onderzoek{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
