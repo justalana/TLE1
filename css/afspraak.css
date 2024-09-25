@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    color: #2C284A;
+    font-family: Kanit, 'sans-serif' !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    background: #fff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    height: min-content;
+    padding: 1vw;
+    border-radius: 1vw;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+form {
+    margin: 2vw 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.stretch input {
+    width: 100%;
+}
+label {
+    display: none;
+}
+.horizontal {
+    display: flex;
+    gap: 3vw;
+}
+input {
+    margin: 1vw 0 !important;
+    box-sizing: border-box;
+    border: 0.15vw #2C284A solid;
+    border-radius: 0.5vw;
+    padding: 0.5vw;
+}
+#submit {
+    padding: 2vw 0;
+    justify-self: center;
+    font-size: 2rem;
+    background: #92BFEE;
+}
+
+
+
+.calendar-container {
+    background: #fff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+#date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: max-content;
+}
+.calendar-header p {
+    user-select: none;
+    font-size: 1.6rem;
+}
+h1 {
+    margin: 0;
+}
+
+.calendar-header p:hover {
+    color: #4ebeef;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.calendar-body{
+    border-spacing: 0.4vw;
+}
+
+.calendar-weekdays {
+    cursor: default;
+    font-weight: 500;
+}
+
+.calendar-body th,
+.calendar-body td {
+    text-align: center;
+    padding: 0.2vw 0.4vw; /* Remove padding to avoid affecting the square shape */
+    width: 30px; /* Ensure cells take equal width */
+    height: 30px;
+    vertical-align: middle;
+    font-family: "Kanit";
+    border-radius: 0.3vw !important;
+    font-size: 1.5rem;
+}
+
+.calendar-body td {
+    background-color: #cee5ef;
+    border: #cee5ef 0.3vw solid;
+    box-shadow: 0 0.1vw 0.2vw 0.05vw rgba(0, 0, 0, 0.2);
+}
+
+.empty-cell {
+    background-color: #a4bac3 !important;
+    border: #a4bac3 0.3vw solid !important;
+}
+
+.clickable:hover {
+    background-color: #aadcf1;
+    border: #aadcf1 0.3vw solid;
+    user-select: none;
+    transition: all 0.15s ease-in-out;
+}
+
+.selected {
+    background-color: #89c9ed !important;
+    border: #2aa8da 0.3vw solid !important;
+}
+.filled {
+    background-color: #a4bac3 !important;
+    border: #a4bac3 0.3vw solid !important;
+    color: #8699a1;
+}
+.errors {
+    font-size: 1.25rem;
+}
+.left-major {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,4 +1,5 @@
 <?php
+/** @var mysqli $conn */
 
 // Haal de id op uit de url met een GET verzoek
 $id = $_GET['id'];
@@ -7,7 +8,7 @@ require_once 'connection.php';
 // Haal de informatie op uit de database met een query
 
 $query = "SELECT * FROM experiments WHERE id = '$id'";
-$result = mysqli_query($conn, $query) or die(mysqli_error($database));
+$result = mysqli_query($conn, $query);
 
 $onderzoek = [];
 while ($row = mysqli_fetch_assoc($result)) {

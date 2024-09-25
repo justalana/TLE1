@@ -1,5 +1,7 @@
 <?php
 require_once 'connection.php';
+/** @var mysqli $conn */
+
 
 $query = "SELECT * FROM experiments";
 $result = mysqli_query($conn, $query);
