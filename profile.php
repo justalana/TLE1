@@ -1,16 +1,25 @@
 <?php
 /** @var mysqli $conn */
-require_once 'connection.php';
+// required when working with sessions
+if (!session_id()) {
+    session_start();
+}
 
-// Retrieve user information based on the user ID stored in the session
-$query = 'SELECT * FROM users WHERE ID = 1';
-$result = mysqli_query($conn, $query)
-or die('Error ' . mysqli_error($conn) . ' with query ' . $query);
+require_once "connection.php";
+//May I visit this page? Check the SESSION
+//check if the user is not logged in
+if (!isset($_SESSION['user'])) {
+    header('Location: register.php');
+    exit;
+}
+$user = $_SESSION['user'];
 
-//save book details in array
-$user_info = mysqli_fetch_assoc($result);
+$query = "SELECT * FROM insurance_users WHERE email = '{$user['email']}'";
+$result = mysqli_query($conn, $query) or die('error: ' . mysqli_error($conn));
 
-mysqli_close($conn);
+$insuranceData = mysqli_fetch_assoc($result);
+print_r($insuranceData);
+
 ?>
 <!doctype html>
 <html lang="en">
