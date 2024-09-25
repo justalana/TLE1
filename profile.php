@@ -12,9 +12,9 @@ if (!isset($_SESSION['user'])) {
     header('Location: register.php');
     exit;
 }
-$user = $_SESSION['user'];
+$user_info = $_SESSION['user'];
 
-$query = "SELECT * FROM insurance_users WHERE email = '{$user['email']}'";
+$query = "SELECT * FROM insurance_users WHERE email = '{$user_info['email']}'";
 $result = mysqli_query($conn, $query) or die('error: ' . mysqli_error($conn));
 
 $insuranceData = mysqli_fetch_assoc($result);
@@ -53,7 +53,7 @@ print_r($insuranceData);
         <img id="user_profile" src="img/user_prof.png" alt="profile image">
         <h2>Beginnende Tester</h2>
         <img src="img/medal.png" alt="medal image">
-        <p id="debt">-€100.000,-</p>
+        <p id="debt">-€<?= htmlentities($insuranceData['dept'])?>,-</p>
         <button id="edit_prof">Profiel Bewerken</button>
     </div>
 </div>
