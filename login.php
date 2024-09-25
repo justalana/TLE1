@@ -31,10 +31,10 @@ if (isset($_POST['submit'])) {
         $result = mysqli_query($conn, $loginQuery) or die('error: ' . mysqli_error($conn));
 
         // check if the user exists
-        if (mysqli_num_rows($result) != 1) {
-            header('Location: register.php');
-            exit;
-        }
+            if (mysqli_num_rows($result) != 1) {
+                header('Location: login.php');
+                exit;
+            }
 
         // Get user data from result
         $user = mysqli_fetch_assoc($result);
@@ -83,7 +83,7 @@ if (isset($_POST['submit'])) {
 
         <div class="login-logo">
             <img class="login-logo-image" src="IMG/vitalislogo.png">
-            <h1>The Company Name</h1>
+            <h1>Vitalis System</h1>
         </div>
 
         <div class="login-form-container">
@@ -114,7 +114,7 @@ if (isset($_POST['submit'])) {
                     <button class="register-button" type="submit" name="submit">Inloggen</button>
                 </div>
 
-                <p>nog geen account? <a href="register.php">aanmelden</a></p>
+                <p>nog geen account? <a href="register.php">Registreer</a></p>
 
             </form>
         </div>

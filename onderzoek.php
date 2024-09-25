@@ -53,11 +53,11 @@ shuffle($onderzoeken)
             <h3>18 - 65 jaar</h3>
         </div>
         <div>
-            <h3><?= $index['research_days'] ?></h3>
+            <h3><?= $index['research_days'] ?> Onderzoeksdagen</h3>
             <?php if ($index['comeback_days'] == 0) { ?>
                 <h3>Geen terug kom dagen</h3>
             <?php } else { ?>
-                <h3><?= $index['comeback_days'] ?></h3>
+                <h3><?= $index['comeback_days']?> Terugkomdagen </h3>
             <?php } ?>
             <a href="calender.php">Meld aan</a>
         </div>
@@ -73,7 +73,6 @@ shuffle($onderzoeken)
                     <h2><?= $onderzoeken[$i]['experiment'] ?></h2>
                     <h2>€<?= $onderzoeken[$i]['money'] ?></h2>
                     <div class="gekozen-onderzoek-card-middle">
-                        <p>datum 14/09 </p>
                         <p><?= $onderzoeken[$i]['explanation'] ?></p>
                     </div>
                     <a href="onderzoek.php?id=<?=$onderzoeken[$i]['id']?>">Aanmelden</a>

@@ -20,7 +20,6 @@ shuffle($onderzoeken)
             <h2><?= $onderzoeken[$i]['experiment']?></h2>
             <h2>€<?=  $onderzoeken[$i]['money']?></h2>
             <div class="gekozen-onderzoek-card-middle">
-                <p>datum <?php echo ($i * 4) - 1 ?>/09 </p>
                 <p><?= $onderzoeken[$i]['explanation']?></p>
             </div>
             <a href="onderzoek.php?id=<?= $onderzoeken[$i]['id']?>">Aanmelden</a>

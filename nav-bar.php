@@ -1,4 +1,6 @@
 <?php
+
+
 ?>
 <nav>
     <div class="nav-bar-middle">
@@ -8,7 +10,10 @@
             <img src="img/vitalislogo.png" alt="Logo">
         </div>
         <a href="#">Over ons</a>
-        <a href="#" class="button">Aanmelden</a>
-
+        <?php if (!isset($_SESSION['user'])) { ?>
+        <a href="login.php" class="button">Aanmelden</a>
+        <?php }else {?>
+        <a href="profile.php" class="button">Profiel</a>
+        <?php }?>
     </div>
 </nav>

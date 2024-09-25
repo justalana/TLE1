@@ -199,7 +199,7 @@ header section {
 .gekozen-onderzoek-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     background: #92BFEE;
     padding: 4vh 1vw;
     border-radius: 25px 25px;
@@ -213,7 +213,7 @@ header section {
 .gekozen-onderzoek-card-middle {
     display: flex;
     gap: 15px;
-    width: 250px;
+    width: 100%;
     color: white;
 }
 

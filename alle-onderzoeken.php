@@ -54,7 +54,6 @@ file_put_contents($location, $encoded_data);
                 <h2><?= $onderzoek['experiment'] ?></h2>
                 <h2>€<?= $onderzoek['money'] ?></h2>
                 <div class="gekozen-onderzoek-card-middle">
-                    <p>datum 14/09 </p>
                     <p><?= $onderzoek['explanation'] ?></p>
                 </div>
                 <a href="onderzoek.php?id=<?=$onderzoek['id']?>">Aanmelden</a>
