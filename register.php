@@ -4,7 +4,7 @@ session_start();
 require_once "connection.php";
 
 $dataList = ['voornaam', 'achternaam', 'email', 'telefoonnummer', 'wachtwoord', 'postcode', 'huisnummer',
-    'tussenvoegsels', 'straat', 'stad', 'land', 'bloedgroep', 'lengte', 'gewicht', 'BMI'];
+    'tussenvoegsels', 'straat', 'stad', 'land', 'bloedgroep', 'lengte', 'gewicht', 'bmi'];
 
 $BMI_value = ''; // initialize $BMI_value to an empty string
 if (isset($_POST['bmi'])) {
@@ -97,6 +97,7 @@ if (isset($_POST['submit'])) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="bmi_calculator.js"></script>
     <title>registreren</title>
 </head>
 <body>

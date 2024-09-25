@@ -1,8 +1,18 @@
-function calculateBMI() {
-    const weight = document.getElementById('weight').addEventListener('input', calculateBMI);
-    const height = document.getElementById('height').addEventListener('input', calculateBMI);
+window.addEventListener('load', init);
 
-    const bmi = weight / (height * height);
+function init() {
+    const weightInput = document.getElementById('gewicht');
+    const heightInput = document.getElementById('lengte');
+
+    weightInput.addEventListener('input', calculateBMI);
+    heightInput.addEventListener('input', calculateBMI);
+}
+
+function calculateBMI() {
+    const weight = document.getElementById('gewicht').value;
+    const height = document.getElementById('lengte').value;
+
+    const bmi = weight / (height / 100 * height / 100);
 
     document.getElementById('bmi').value = bmi.toFixed(2);
 
