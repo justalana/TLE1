@@ -1,5 +1,3 @@
-
-
 const headerSelector = document.querySelector('header')
 
 // Creeër de elementen
@@ -8,11 +6,7 @@ const container = document.createElement('section')
 // Right div & left div
 const divRight = document.createElement('div');
 const divLeft = document.createElement('div')
-divLeft.classList.add('divLeft')
-
-
-
-
+divRight.classList.add('divRight')
 
 
 // Maak een h1 element voor de titel
@@ -21,25 +15,27 @@ title.classList.add('title');
 title.textContent = 'VITALIS SYSTEM';
 
 const headerTitle = document.createElement('h1');
-headerTitle.textContent = 'Welcome to MedCorpTest Trials: Your Health, Our Profits'
+headerTitle.textContent = 'Uw Schulden, Onze Zorgen'
+headerTitle.id = 'headerTitle'
 
 // Maak een p element voor de tekst
-const text = document.createElement('p');
-text.textContent = "Overwhelmed by medical debt? At MedCorp, we believe there's a better way to take back control of your financial future. Instead of feeling trapped by bills, why not turn your situation into an opportunity? By participating in our cutting-edge medical trials, you can not only contribute to the advancement of healthcare but also reduce your debt in the process. It’s a chance to be part of something meaningful, all on your terms—your body, your choice. Whether you're passionate about helping others or simply looking for a practical way to ease the burden, MedCorp gives you the opportunity to do both. Make a real difference in the future of medicine while finding financial relief. Your health, your future—let’s make it work for you";
+const text = document.createElement('h3');
+text.textContent = "Overweldigd door medische schulden? Bij Vitalis Systeem geloven we dat er een betere manier is om de controle over uw financiële toekomst terug te nemen. In plaats van gevangen te zitten door rekeningen, waarom niet uw situatie omzetten in een kans? Door deel te nemen aan onze baanbrekende medische proeven, kunt u niet alleen bijdragen aan de vooruitgang van de gezondheidszorg, maar ook uw schuld verminderen tijdens het proces. Het is een kans om deel uit te maken van iets betekenisvols, allemaal op uw voorwaarden - uw lichaam, uw keuze. Of u nu gepassioneerd bent over het helpen van anderen of gewoon op zoek bent naar een praktische manier om de last te verlichten, Vitalis System biedt u de kans om beide te doen. Bovendien, kunt u ook uw zorgpremie alvast vooruit betalen door deel te nemen aan onze onderzoeken, zodat u minder financiële zorgen heeft en meer tijd heeft voor de dingen die echt belangrijk zijn. Maak een echt verschil in de toekomst van de geneeskunde terwijl u financiële verlichting vindt. Uw gezondheid, uw toekomst - laten we het voor u laten werken."
 
 const aanmeldButton = document.createElement('a');
 aanmeldButton.textContent = 'Nu aanmelden!';
 aanmeldButton.href = 'aanmelden.php'
 
 // Maak een img element voor het logo
-const image = document.createElement('img');
-image.src = 'img/vitalislogo.png'; // Stel de bron van de afbeelding in
+const headerBannerImage = document.createElement('img');
+headerBannerImage.id = 'header-banner-image';
+headerBannerImage.src = 'img/header-banner.png'; // Stel de bron van de afbeelding in
 
 // Voeg de elementen toe aan de div
-divLeft.appendChild(headerTitle)
-divLeft.appendChild(text);
-divLeft.appendChild(aanmeldButton)
-divRight.appendChild(image);
+
+divRight.appendChild(text);
+divRight.appendChild(aanmeldButton)
+divLeft.appendChild(headerBannerImage);
 
 
 container.appendChild(divLeft)
@@ -48,8 +44,8 @@ container.appendChild(divRight)
 
 // Voeg de div toe aan het document body
 headerSelector.appendChild(title);
+headerSelector.appendChild(headerTitle)
 headerSelector.appendChild(container);
-
 
 
 

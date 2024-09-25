@@ -1,14 +1,22 @@
 
 function fetchData() {
-    fetch('js/onderzoek-data.json') // replace with the URL where the JSON data is located
-        .then(response => response.json())
+    fetch('alldata.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Netwerkfout: ' + response.statusText);
+            }
+            return response.json();
+
+        })
         .then(researchData => {
             loadData(researchData)
-        })
-        .catch(error => console.error('Error:', error));
 
+        })
+        .catch(error => {
+            console.error('Fout bij het ophalen van data:', error);
+        });
 }
-fetchData();
+
 let headerSelector = document.querySelector('header')
 let mainSelector = document.querySelector('main')
 
@@ -59,48 +67,48 @@ function loadSearchFilter() {
     searchFilterDiv.appendChild(searchFilterForm)
     mainSelector.prepend(searchFilterDiv)
 }
-    loadSearchFilter()
+    loadSearchFilter();
 
-// function loadData(researchData) {
+function loadData(researchData) {
+    fetchData(researchData)
+//     //
+//     // // create a section with all the researchs
+//     // const sectionContainer = document.createElement('section')
+//     // for (const data in researchData) {
+//     //     console.log(researchData[data].type)
+//     //     console.log(researchData[data].description)
+//     //     console.log(researchData[data].payout)
+//     //
+//     //     const articleCard = document.createElement('article')
+//     //     const imgageArticle = document.createElement('img');
+//     //     const articleTitle = document.createElement('h2')
+//     //     const articlePayout = document.createElement('h2')
+//     //     const articleParagraph = document.createElement('p')
+//     //     const articleAnchor = document.createElement('a')
+//     //
+//     //
+//     //     // textContent
+//     //     articleTitle.textContent = researchData[data].type
+//     //     articleParagraph.textContent = researchData[data].description
+//     //     articlePayout.textContent = researchData[data].payout
+//     //     articleAnchor.textContent = "Meer Info"
+//     //
+//     //     // id & classes
+//     //     sectionContainer.id = "section-article"
+//     //     articleCard.id = "section-article-cards"
+//     //
+//     //
+//     //     imgageArticle.src = "./img/vitalislogo.png"
+//     //
+//     //
+//     //     articleCard.appendChild(imgageArticle)
+//     //     articleCard.appendChild(articlePayout)
+//     //     articleCard.appendChild(articleTitle)
+//     //     articleCard.appendChild(articleParagraph)
+//     //     articleCard.appendChild(articleAnchor)
+//     //     sectionContainer.appendChild(articleCard)
+//     // }
 //
 //
-//     // create a section with all the researchs
-//     const sectionContainer = document.createElement('section')
-//     for (const data in researchData) {
-//         console.log(researchData[data].type)
-//         console.log(researchData[data].description)
-//         console.log(researchData[data].payout)
-//
-//         const articleCard = document.createElement('article')
-//         const imgageArticle = document.createElement('img');
-//         const articleTitle = document.createElement('h2')
-//         const articlePayout = document.createElement('h2')
-//         const articleParagraph = document.createElement('p')
-//         const articleAnchor = document.createElement('a')
-//
-//
-//         // textContent
-//         articleTitle.textContent = researchData[data].type
-//         articleParagraph.textContent = researchData[data].description
-//         articlePayout.textContent = researchData[data].payout
-//         articleAnchor.textContent = "Meer Info"
-//
-//         // id & classes
-//         sectionContainer.id = "section-article"
-//         articleCard.id = "section-article-cards"
-//
-//
-//         imgageArticle.src = "./img/vitalislogo.png"
-//
-//
-//         articleCard.appendChild(imgageArticle)
-//         articleCard.appendChild(articlePayout)
-//         articleCard.appendChild(articleTitle)
-//         articleCard.appendChild(articleParagraph)
-//         articleCard.appendChild(articleAnchor)
-//         sectionContainer.appendChild(articleCard)
-//     }
-//
-//
-//     mainSelector.appendChild(sectionContainer)
-// }
+//     // mainSelector.appendChild(sectionContainer)
+}
