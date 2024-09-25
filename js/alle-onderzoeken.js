@@ -1,6 +1,5 @@
-
 function fetchData() {
-    fetch('alldata.json')
+    fetch('js/alldata.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Netwerkfout: ' + response.statusText);
@@ -17,34 +16,36 @@ function fetchData() {
         });
 }
 
+fetchData()
+
 let headerSelector = document.querySelector('header')
 let mainSelector = document.querySelector('main')
 
 function headerGekozenOnderzoeken() {
+
     // Create a div with a title and a subtitle with the information of the product
     const headerMainDiv = document.createElement('div');
     const headerMainTitle = document.createElement('h1');
     const headerSubTitle = document.createElement('h2');
-    const headerAnchor = document.createElement('a');
+    const headerParagraph = document.createElement('p');
 
 
     // Give the elements a unique id so you can adjust its style later on
     headerMainDiv.id = 'headerMainDiv';
 
-    // Assign context to the elements
-    headerMainTitle.textContent = "Meeste Gekozen Onderzoek";
-    headerSubTitle.textContent = "Informatie over de onderzoek,Informatie over de onderzoek,Informatie over de onderzoek,Informatie over de onderzoek,Informatie over de onderzoek"
-    headerAnchor.textContent = "Meer Informatie"
+
+    headerMainTitle.textContent = "Vind het onderzoek dat bij jou past"
+    headerSubTitle.textContent = "Als deelnemer aan geneesmiddelenonderzoek help jij mee met de ontwikkeling van nieuwe medicijnen. Dankzij jouw deelname krijgen patiënten een beter leven. Bekijk onze huidige onderzoeken hieronder en meld je aan!"
+
 
 
     headerMainDiv.appendChild(headerMainTitle)
     headerMainDiv.appendChild(headerSubTitle)
-    headerMainDiv.appendChild(headerAnchor)
-
+    headerMainDiv.appendChild(headerParagraph)
     headerSelector.appendChild(headerMainDiv)
 
-
 }
+
 headerGekozenOnderzoeken()
 
 
@@ -67,7 +68,8 @@ function loadSearchFilter() {
     searchFilterDiv.appendChild(searchFilterForm)
     mainSelector.prepend(searchFilterDiv)
 }
-    loadSearchFilter();
+
+loadSearchFilter();
 
 function loadData(researchData) {
     fetchData(researchData)

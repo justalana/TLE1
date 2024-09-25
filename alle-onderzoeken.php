@@ -5,11 +5,11 @@ $query = "SELECT * FROM experiments";
 $result = mysqli_query($database, $query) or die(mysqli_error($database));
 
 
-
+$onderzoeken = [];
 while ($row = mysqli_fetch_assoc($result)) {
     $onderzoeken[] = $row;
 }
-print_r($onderzoeken);
+
 
 
 // this allows the whole table will be converted to a JSON string
@@ -17,6 +17,7 @@ $encoded_data = json_encode($onderzoeken,JSON_FORCE_OBJECT);
 // put the JSON stringefied data into a JSON FILE
 $location ='js/alldata.json';
 file_put_contents($location, $encoded_data);
+
 
 
 
@@ -59,11 +60,6 @@ file_put_contents($location, $encoded_data);
         <?php } ?>
     </section>
 </main>
-<!--
-Moet nog naar gekeken worden waarom de php eerder laad dan de rest
--->
-
-
 <footer>
     <?php
     require_once 'footer.php';
