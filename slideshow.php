@@ -5,8 +5,8 @@ require_once 'connection.php';
 
 $query = 'SELECT * FROM experiments';
 
-$result = mysqli_query($db, $query)
-or die('Error '.mysqli_error($db).' with query '.$query);
+$result = mysqli_query($conn, $query)
+or die('Error '.mysqli_error($conn).' with query '.$query);
 
 $experiments = [];
 
@@ -14,7 +14,7 @@ while($row = mysqli_fetch_assoc($result)) {
     $experiments[] = $row;
 }
 
-mysqli_close($db);
+mysqli_close($conn);
 ?>
 
 <!doctype html>
