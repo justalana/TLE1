@@ -1,6 +1,5 @@
 <?php
 ?>
-
 <nav>
     <div class="nav-bar-middle">
         <a href="index.php">Home</a>
@@ -12,5 +11,4 @@
         <a href="#" class="button">Aanmelden</a>
 
     </div>
-
 </nav>
