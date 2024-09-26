@@ -9,7 +9,7 @@
         </div>
         <a href="#">Over ons</a>
         <?php if (!isset($_SESSION['user'])) { ?>
-        <a href="login.php" class="button">Aanmelden</a>
+        <a href="login.php" >Aanmelden</a>
         <?php }else {?>
         <a href="profile.php" class="button">Profiel</a>
         <?php }?>

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     font-family: Kanit, 'sans-serif';
     margin: 0;
@@ -19,7 +20,7 @@ nav {
     flex-direction: column;;
     justify-content: center;
     align-items: center;
-    margin:0;
+    margin: 0;
 }
 
 nav img {
@@ -33,7 +34,7 @@ nav img {
     align-items: center;
 }
 
-nav a{
+nav a {
     align-items: center;
     text-decoration: none;
     color: #ffffff;
@@ -46,18 +47,34 @@ nav a{
     transition: 200ms ease-in-out;
     box-shadow: 0px 0px 10px #92BFEE;
 }
-nav a:hover{
-    color:#2C284A;
+
+nav a:hover {
+    color: #2C284A;
     background: #ffffff;
     transition: 200ms ease-in-out;
 }
 
 
+#footer-contact a {
+    display: block;
+    text-decoration: none;
+    color: #2C284A;
+}
+
+#footer-contact a:hover {
+    text-decoration: underline;
+}
+
+.footer-openingstijden {
+    display: flex;
+    gap: 40px;
+}
+
 @keyframes slideInLeft {
-    0%{
+    0% {
         transform: translateX(-100vw);
     }
-    100%{
+    100% {
         transform: translateX(0);
     }
 }
@@ -67,9 +84,9 @@ nav a:hover{
     font-style: italic;
     text-align: right;
     padding-right: 5vw;
-    margin-bottom:-3vh;
-    letter-spacing:15px;
-    animation: slideInLeft 2s ease-in-out ;
+    margin-bottom: -3vh;
+    letter-spacing: 15px;
+    animation: slideInLeft 2s ease-in-out;
 
 }
 
@@ -78,42 +95,45 @@ header section {
     justify-content: space-evenly;
     align-items: center;
     padding: 5vh 5vw;
-    gap:50px;
+    gap: 50px;
 }
 
 @keyframes slideInRight {
-    0%{
+    0% {
         transform: translateX(100vw);
     }
-    100%{
+    100% {
         transform: translateX(0);
     }
 }
-#headerTitle{
-    font-weight:500;
+
+#headerTitle {
+    font-weight: 500;
     text-align: left;
-    letter-spacing:4px;
-    padding-left:5vw;
-    margin-bottom:-2vh;
-    animation: slideInRight 2s ease-in-out ;
+    letter-spacing: 4px;
+    padding-left: 5vw;
+    margin-bottom: -2vh;
+    animation: slideInRight 2s ease-in-out;
 }
 
-.divRight{
-    display:flex;
+.divRight {
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 50px;
 }
-.divRight h3{
+
+.divRight h3 {
 
     font-weight: 300;
 }
-.divRight a{
+
+.divRight a {
     width: 20vw;
     font-size: 1.2rem;
     text-decoration: none;
-    color:white;
-    border:2px solid #92BFEE;
+    color: white;
+    border: 2px solid #92BFEE;
     box-shadow: 0px 0px 10px #92BFEE;
     border-radius: 25px 25px;
     background: #92BFEE;
@@ -121,23 +141,25 @@ header section {
     text-align: center;
     transition: 200ms ease-in-out;
 }
-.divRight a:hover{
-    color:#2C284A;
+
+.divRight a:hover {
+    color: #2C284A;
     background: #ffffff;
     transition: 200ms ease-in-out;
 }
 
-#header-banner-image{
+#header-banner-image {
     width: 350px;
     height: 350px;
-    border:5px solid #92BFEE;
+    border: 5px solid #92BFEE;
     border-radius: 50% 50%;
     box-shadow: 0px 0px 20px #92BFEE;
     transition: ease-in-out 500ms;
 }
-#header-banner-image:hover{
+
+#header-banner-image:hover {
     transition: ease-in 500ms;
-    transform:scale(1.15);
+    transform: scale(1.15);
     box-shadow: -10px 5px 20px #92BFEE;
 }
 
@@ -163,11 +185,11 @@ header section {
     text-align: center;
 }
 
-#onze-specialisten img, #onderzoek-deelnemers img, #section-article img{
+#onze-specialisten img, #onderzoek-deelnemers img, #section-article img {
     width: 250px;
-    height:250px;
+    height: 250px;
     object-fit: contain;
-    border-radius:50%;
+    border-radius: 50%;
 }
 
 .specialisten-card h2 {
@@ -190,8 +212,8 @@ header section {
 }
 
 #gekozen-onderzoeken {
-    display:flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 3vw;
     padding: 5vh 2vw;
 }
@@ -203,11 +225,19 @@ header section {
     background: #92BFEE;
     padding: 4vh 1vw;
     border-radius: 25px 25px;
+
 }
 
 .gekozen-onderzoek-card h2 {
     text-align: center;
     color: white;
+    text-shadow: 1px 1px 5px #2C284A;
+}
+.gender-age{
+    display: flex;
+    gap:40px;
+    color:white;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 .gekozen-onderzoek-card-middle {
@@ -226,6 +256,11 @@ header section {
     background: rgba(84, 110, 138, 0.5);
     padding: 6px 5px;
 }
+.gekozen-onderzoek-card a:hover{
+    color: #2C284A;
+    background: #ffffff;
+    transition: 200ms ease-in-out;
+}
 
 .alle-onderzoeken {
     display: flex;
@@ -238,8 +273,23 @@ header section {
 
 #footer-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 100px;
+}
+
+#terms-condition {
+    display: flex;
+    gap: 100px;
+    color: #2C284A;
+}
+
+#terms-condition a {
+    text-decoration: none;
+}
+
+#terms-condition a:hover {
+    text-decoration: underline;
 }
 
 .footer-div {
@@ -249,8 +299,8 @@ header section {
 }
 
 #footer-container img {
-    width: 200px;
-    height: 200px;
+    width: 125px;
+    height: 125px;
 }
 
 .terms-condition {
@@ -268,25 +318,27 @@ header section {
 }
 
 
-
 /* De styling van de pagina alle-onderzoeken.php*/
-#headerMainDiv{
+#headerMainDiv {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width:50%;
-    margin:0 auto;
+    width: 50%;
+    margin: 0 auto;
 }
-main input{
+
+main input {
     margin: 10vh 2vw 0;
 }
-#alle-onderzoeken{
+
+#alle-onderzoeken {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     gap: 3vw;
     padding: 5vh 2vw;
 }
+
 #section-article-cards {
     display: flex;
     flex-direction: column;
@@ -295,9 +347,19 @@ main input{
 
 }
 
+
+
 /* De styling van geselecteerde onderzoek.php*/
-#header-geselecteerderde-onderzoek{
+#header-geselecteerderde-onderzoek {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+#experiment-details{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+
 }

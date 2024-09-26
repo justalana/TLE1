@@ -9,7 +9,7 @@ $login = false;
 // Is user logged in?
 
 if (isset($_POST['submit'])) {
-    $errors = array();
+    $errors = [];
 
     // Get form data
     $email = mysqli_real_escape_string($conn, $_POST['email']);
