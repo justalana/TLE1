@@ -21,12 +21,12 @@
         </div>
         <div class="footer-openingstijden">
             <div>
-                <p>Werkdagen</p>
-                <p>Weekend </p>
+                <p>Maandag t/m Vrijdag</p>
+                <p>Zaterdag & Zondag </p>
             </div>
             <div>
                 <p>08:30 tot 17:00</p>
-                <p>gesloten</p>
+                <p>Gesloten</p>
             </div>
         </div>
     </div>
