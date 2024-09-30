@@ -50,34 +50,38 @@ shuffle($onderzoeken)
             as $index) { ?>
             <h1><?= $index['experiment'] ?></h1>
             <h2><?= $index['gender'] ?></h2>
-            <h3>18 - 65 jaar</h3>
+            <h3>18 - 55 jaar</h3>
         </div>
         <div>
-            <h3><?= $index['research_days'] ?></h3>
+            <h3><?= $index['research_days'] ?> Onderzoeksdagen</h3>
             <?php if ($index['comeback_days'] == 0) { ?>
                 <h3>Geen terug kom dagen</h3>
             <?php } else { ?>
-                <h3><?= $index['comeback_days'] ?></h3>
+                <h3><?= $index['comeback_days'] ?> Terugkomdagen </h3>
             <?php } ?>
-            <a href="calender.php">Meld aan</a>
+            <a href="calender.php">Inschrijven</a>
         </div>
-        <?php } ?>
+
     </div>
 </header>
 
 <main>
+    <section id="experiment-details">
+        <h1>Over het Onderzoek</h1>
+            <p><?=$index['experiment_details']?></p>
+        <?php } ?>
+    </section>
 
     <section id="alle-onderzoeken">
-        <?php for ($i = 0; $i < count($onderzoeken) - 7 ; $i++) { ?>
-                <div class="gekozen-onderzoek-card">
-                    <h2><?= $onderzoeken[$i]['experiment'] ?></h2>
-                    <h2>€<?= $onderzoeken[$i]['money'] ?></h2>
-                    <div class="gekozen-onderzoek-card-middle">
-                        <p>datum 14/09 </p>
-                        <p><?= $onderzoeken[$i]['explanation'] ?></p>
-                    </div>
-                    <a href="onderzoek.php?id=<?=$onderzoeken[$i]['id']?>">Aanmelden</a>
+        <?php for ($i = 0; $i < count($onderzoeken) - 7; $i++) { ?>
+            <div class="gekozen-onderzoek-card">
+                <h2><?= $onderzoeken[$i]['experiment'] ?></h2>
+                <h2>€<?= $onderzoeken[$i]['money'] ?></h2>
+                <div class="gekozen-onderzoek-card-middle">
+                    <p><?= $onderzoeken[$i]['explanation'] ?></p>
                 </div>
+                <a href="onderzoek.php?id=<?= $onderzoeken[$i]['id'] ?>">Bekijk Onderzoek</a>
+            </div>
         <?php } ?>
     </section>
 </main>

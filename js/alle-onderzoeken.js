@@ -1,25 +1,26 @@
-function fetchData() {
-    fetch('js/alldata.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Netwerkfout: ' + response.statusText);
-            }
-            return response.json();
-
-        })
-        .then(researchData => {
-            loadData(researchData)
-
-        })
-        .catch(error => {
-            console.error('Fout bij het ophalen van data:', error);
-        });
-}
-
-fetchData()
+// function fetchData() {
+//     fetch('js/alldata.json')
+//         .then(response => {
+//             if (!response.ok) {
+//                 throw new Error('Netwerkfout: ' + response.statusText);
+//             }
+//             return response.json();
+//
+//         })
+//         .then(researchData => {
+//             loadData(researchData)
+//
+//         })
+//         .catch(error => {
+//             console.error('Fout bij het ophalen van data:', error);
+//         });
+// }
+//
+// fetchData()
 
 let headerSelector = document.querySelector('header')
 let mainSelector = document.querySelector('main')
+let listArray = ["Draag bij aan de ontwikkeling van nieuwe medicijnen", "Tijd om te ontspannen, studeren of werken", "Krijg een mooie vergoeding"]
 
 function headerGekozenOnderzoeken() {
 
@@ -27,21 +28,18 @@ function headerGekozenOnderzoeken() {
     const headerMainDiv = document.createElement('div');
     const headerMainTitle = document.createElement('h1');
     const headerSubTitle = document.createElement('h2');
-    const headerParagraph = document.createElement('p');
 
 
     // Give the elements a unique id so you can adjust its style later on
     headerMainDiv.id = 'headerMainDiv';
 
-
     headerMainTitle.textContent = "Vind het onderzoek dat bij jou past"
-    headerSubTitle.textContent = "Als deelnemer aan geneesmiddelenonderzoek help jij mee met de ontwikkeling van nieuwe medicijnen. Dankzij jouw deelname krijgen patiënten een beter leven. Bekijk onze huidige onderzoeken hieronder en meld je aan!"
+    headerSubTitle.textContent = "Als deelnemer aan geneesmiddelenonderzoek help jij mee met de ontwikkeling van nieuwe medicijnen. Dankzij jouw deelname krijgen patiënten een beter leven. Bekijk onze huidige onderzoeken hieronder en meld je aan!";
 
 
 
     headerMainDiv.appendChild(headerMainTitle)
     headerMainDiv.appendChild(headerSubTitle)
-    headerMainDiv.appendChild(headerParagraph)
     headerSelector.appendChild(headerMainDiv)
 
 }

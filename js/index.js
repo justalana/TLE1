@@ -24,7 +24,7 @@ text.textContent = "Overweldigd door medische schulden? Bij Vitalis Systeem gelo
 
 const aanmeldButton = document.createElement('a');
 aanmeldButton.textContent = 'Nu aanmelden!';
-aanmeldButton.href = 'aanmelden.php'
+aanmeldButton.href = 'register.php'
 
 // Maak een img element voor het logo
 const headerBannerImage = document.createElement('img');

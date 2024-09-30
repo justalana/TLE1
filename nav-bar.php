@@ -8,7 +8,10 @@
             <img src="img/vitalislogo.png" alt="Logo">
         </div>
         <a href="#">Over ons</a>
-        <a href="register.php" class="button">Aanmelden</a>
-
+        <?php if (!isset($_SESSION['user'])) { ?>
+        <a href="login.php" >Aanmelden</a>
+        <?php }else {?>
+        <a href="profile.php" class="button">Profiel</a>
+        <?php }?>
     </div>
 </nav>
