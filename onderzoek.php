@@ -14,7 +14,6 @@ $onderzoek = [];
 while ($row = mysqli_fetch_assoc($result)) {
     $onderzoek[] = $row;
 }
-
 $queryAllInfo = "SELECT * FROM experiments ";
 $resultAllInfo = mysqli_query($conn, $queryAllInfo);
 
@@ -59,7 +58,7 @@ shuffle($onderzoeken)
             <?php } else { ?>
                 <h3><?= $index['comeback_days'] ?> Terugkomdagen </h3>
             <?php } ?>
-            <a href="calender.php">Inschrijven</a>
+            <a href="calender.php?id=<?= $id ?>">Inschrijven</a>
         </div>
 
     </div>

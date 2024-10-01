@@ -16,6 +16,18 @@ if ($loggedUser != "") {
     header("location:login.php");
 }
 
+$query = "SELECT * FROM insurance_users WHERE email = '{$loggedUser['email']}'";
+$result = mysqli_query($conn, $query) or die('error: ' . mysqli_error($conn));
+
+$insuranceData = mysqli_fetch_assoc($result);
+// Haal de id op uit de url met een GET verzoek
+$id = $_GET['id'];
+$query = "SELECT `money` FROM `experiments` WHERE id = '$id'";
+$result = mysqli_query($conn, $query);
+$money = mysqli_fetch_assoc($result);
+
+$newMoney = $insuranceData['dept'] + $money['money'];
+print_r($newMoney);
 
 $loadAppointmentsQuery = "SELECT `date` FROM `appointments`";
 $loadAppointmentsResult = mysqli_query($conn, $loadAppointmentsQuery);
@@ -57,6 +69,10 @@ if (!empty($_POST['submit'])) {
         $checkResult = mysqli_query($conn, $checkQuery);
 
         if (mysqli_num_rows($checkResult) <= 0) {
+            $updateQuery = "UPDATE `insurance_users` SET `dept` = '$newMoney' WHERE `email` = '{$loggedUser['email']}'";
+            $updateResult = mysqli_query($conn, $updateQuery);
+
+
             $postQuery = "INSERT INTO `appointments`(`user_ID`, `date`, `name`, `last_name`, `e-mail`, `phone`, `gender`, `side_notes`) VALUES ('$userID','$date','$name','$lastName','$email','$phone','$gender','$sideNotes')";
             $postResult = mysqli_query($conn, $postQuery);
             if ($postResult) {

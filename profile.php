@@ -18,8 +18,8 @@ $query = "SELECT * FROM insurance_users WHERE email = '{$user_info['email']}'";
 $result = mysqli_query($conn, $query) or die('error: ' . mysqli_error($conn));
 
 $insuranceData = mysqli_fetch_assoc($result);
-print_r($insuranceData);
 
+mysqli_close($conn);
 ?>
 <!doctype html>
 <html lang="en">
@@ -53,7 +53,7 @@ print_r($insuranceData);
         <img id="user_profile" src="img/user_prof.png" alt="profile image">
         <h2>Beginnende Tester</h2>
         <img src="img/medal.png" alt="medal image">
-        <p id="debt">-€<?= htmlentities($user_info['dept'])?>,-</p>
+        <p id="debt">€<?= htmlentities($insuranceData['dept'])?>,- Verdiend</p>
         <button id="edit_prof">Profiel Bewerken</button>
     </div>
 </div>
