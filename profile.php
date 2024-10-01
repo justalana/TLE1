@@ -55,6 +55,7 @@ mysqli_close($conn);
         <img src="img/medal.png" alt="medal image">
         <p id="debt">€<?= htmlentities($insuranceData['dept'])?>,- Verdiend</p>
         <button id="edit_prof">Profiel Bewerken</button>
+        <button id="edit_prof" ><a href="logout.php">Uitloggen</a></button>
     </div>
 </div>
 <div>
