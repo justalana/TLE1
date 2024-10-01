@@ -10,7 +10,7 @@
 </head>
 <body>
 <a href="index.php">Go back home</a>
-<p>These terms and conditions create a contract between you and Vitalis Systems (the “Agreement”). Please read the Agreement carefully.
+<pre>These terms and conditions create a contract between you and Vitalis Systems (the “Agreement”). Please read the Agreement carefully.
 
     TABLE OF CONTENTS
 
@@ -392,6 +392,7 @@
 
     Vitalis Systems may notify you with respect to the Services by sending an email message to your email address or a letter via postal mail to your mailing address, or by a posting on the Services. Notices shall become effective immediately. Vitalis Systems may also contact you by email or push notification to send you additional information about the Services.
 
-    You hereby grant Vitalis Systems the right to take steps Vitalis Systems believes are reasonably necessary or appropriate to enforce and/or verify compliance with any part of this Agreement. You agree that Vitalis Systems has the right, without liability to you, to disclose any data and/or information to law enforcement authorities, government officials, and/or a third party, as Vitalis Systems believes is reasonably necessary or appropriate to enforce and/or verify compliance with any part of this Agreement (including but not limited to Vitalis Systems's right to cooperate with any legal process relating to your use of the Services and/or Content, and/or a third-party claim that your use of the Services and/or Content is unlawful and/or infringes such third party's rights).</p>
+    You hereby grant Vitalis Systems the right to take steps Vitalis Systems believes are reasonably necessary or appropriate to enforce and/or verify compliance with any part of this Agreement. You agree that Vitalis Systems has the right, without liability to you, to disclose any data and/or information to law enforcement authorities, government officials, and/or a third party, as Vitalis Systems believes is reasonably necessary or appropriate to enforce and/or verify compliance with any part of this Agreement (including but not limited to Vitalis Systems's right to cooperate with any legal process relating to your use of the Services and/or Content, and/or a third-party claim that your use of the Services and/or Content is unlawful and/or infringes such third party's rights).
+</pre>
 </body>
 </html>

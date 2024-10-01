@@ -35,8 +35,8 @@ if (isset($_POST['submit'])) {
         'lengte' => 'Vul een lengte in',
         'gewicht' => 'Vul een gewicht in',
         'bloedgroep' => 'Vul een bloedgroep in',
-
     ];
+    $geslacht = $_POST['gender'];
 
     $errors = [];
 
@@ -68,17 +68,19 @@ if (isset($_POST['submit'])) {
             $hashedPassword = password_hash($wachtwoord, PASSWORD_DEFAULT);
             // store the new user in the database.
 
-            $insertQuery = "INSERT INTO `users` (`id`, `email`, `phone_number`, `password`, `first_name`, `last_name`, `country`, `city`, `street`, `prefixes`, `zip_code`, `house_number`, `height`, `weight`, `BMI`, `blood_type`)
-                            VALUES (NULL, '$email', '$telefoonnummer', '$hashedPassword', '$voornaam', '$achternaam', '$land', '$stad', '$straat', '$tussenvoegsels', '$postcode', '$huisnummer', '$lengte', '$gewicht', '$BMI', '$bloedgroep')";
+            $insertQuery = "INSERT INTO `users` (`id`, `email`, `phone_number`, `password`, `first_name`, `last_name`, `country`, `city`, `street`, `prefixes`, `zip_code`, `house_number`, `height`, `weight`, `BMI`, `blood_type`, `gender`)
+                            VALUES (NULL, '$email', '$telefoonnummer', '$hashedPassword', '$voornaam', '$achternaam', '$land', '$stad', '$straat', '$tussenvoegsels', '$postcode', '$huisnummer', '$lengte', '$gewicht', '$BMI', '$bloedgroep', '$geslacht')";
 
-            // Generate a random number for the dept column
-//            $randomDept = rand(1000, 1000000); // adjust the range as needed
-            $randomDept = 0;
+//            // Generate a random number for the dept column
+////            $randomDept = rand(1000, 1000000); // adjust the range as needed
+//            $randomDept = 0;
+//
+//            $secondInsertQuery = "INSERT INTO `insurance_users` (`email`, `first_name`, `last_name`, `dept`)
+//                                    VALUES ('$email', '$voornaam', '$achternaam', '$randomDept')";
 
-            $secondInsertQuery = "INSERT INTO `insurance_users` (`email`, `first_name`, `last_name`, `dept`)
-                                    VALUES ('$email', '$voornaam', '$achternaam', '$randomDept')";
+//            && mysqli_query($conn, $secondInsertQuery)
 
-            if (mysqli_query($conn, $insertQuery) && mysqli_query($conn, $secondInsertQuery)) {
+            if (mysqli_query($conn, $insertQuery)) {
                 // Redirect to login page
                 header('location: index.php');
                 // Exit the code

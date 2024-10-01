@@ -6,6 +6,7 @@ body {
     padding: 0;
     color: #2C284A;
     background-color: #fcf8f8;
+    overflow-x: hidden;
 }
 
 nav {
@@ -328,6 +329,11 @@ header section {
 #footer-container img {
     width: 125px;
     height: 125px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
 }
 
 .terms-condition {

@@ -21,7 +21,8 @@ if ($loggedUser != "") {
     $lastName = $loggedUser['last_name'];
     $email = $loggedUser['email'];
     $phone = $loggedUser['phone_number'];
-//    $loadedGender = $loggedUser['gender'];
+    $gender = $loggedUser['gender'];
+
 } else {
     header("location:login.php");
 }
@@ -36,8 +37,8 @@ $query = "SELECT `money` FROM `experiments` WHERE id = '$id'";
 $result = mysqli_query($conn, $query);
 $money = mysqli_fetch_assoc($result);
 
-$newMoney = $insuranceData['dept'] + $money['money'];
-print_r($newMoney);
+//$newMoney = $insuranceData['dept'] + $money['money'];
+
 
 $loadAppointmentsQuery = "SELECT `date` FROM `appointments`";
 $loadAppointmentsResult = mysqli_query($conn, $loadAppointmentsQuery);
@@ -69,7 +70,6 @@ if (!empty($_POST['submit'])) {
     $email = mysqli_escape_string($conn, $_POST['email']);
     $phone = mysqli_escape_string($conn, $_POST['phoneNumber']);
     $gender = mysqli_escape_string($conn, $_POST['gender']);
-    $sideNotes = "TBD";
 
 
     require_once "afspraak-errors.php";

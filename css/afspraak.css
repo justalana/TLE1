@@ -11,11 +11,22 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    align-items: center;
     width: 100vw;
-
+    flex-direction: column;
 }
-
+.onderzoek-informatie {
+    background: #fff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    max-width: 50%;
+    padding: 1vw;
+    border-radius: 1vw;
+    margin-top: 2vw;
+}
+#onderzoek-titel {
+    font-size: 2rem;
+    font-weight: bold;
+}
 .left {
     display: flex;
     flex-direction: column;
@@ -58,9 +69,18 @@ input {
     padding: 2vw 0;
     justify-self: center;
     font-size: 2rem;
-    background: #92BFEE;
+    border: #a3e4ee 2px solid;
+    background: #a3e4ee;
+    box-shadow: 0px 0px 10px #a3e4ee;
+    transition: 200ms ease-in-out;
+    border-radius: 25px;
+    color: #fff;
 }
 
+#submit:hover {
+    background: #fff ;
+    color: #2C284A;
+}
 
 
 .calendar-container {
@@ -118,14 +138,15 @@ h1 {
 }
 
 .calendar-body td {
-    background-color: #cee5ef;
-    border: #cee5ef 0.3vw solid;
+    background-color: #a3e4ee;
+    border: #a3e4ee 0.3vw solid;
     box-shadow: 0 0.1vw 0.2vw 0.05vw rgba(0, 0, 0, 0.2);
+    color: #fff;
 }
 
 .empty-cell {
-    background-color: #a4bac3 !important;
-    border: #a4bac3 0.3vw solid !important;
+    background-color: #99cbd5 !important;
+    border: #99cbd5 0.3vw solid !important;
 }
 
 .clickable:hover {
@@ -136,13 +157,14 @@ h1 {
 }
 
 .selected {
-    background-color: #89c9ed !important;
-    border: #2aa8da 0.3vw solid !important;
+    background-color: rgba(252, 169, 156, 0.5) !important;
+    border: rgba(252, 169, 156, 0.6) 0.2vw solid !important;
+    border-radius: 0.3vw !important;
 }
 .filled {
-    background-color: #a4bac3 !important;
-    border: #a4bac3 0.3vw solid !important;
-    color: #8699a1;
+    background-color: #99cbd5 !important;
+    border: #99cbd5 0.3vw solid !important;
+    color: #88aeb6;
 }
 .errors {
     font-size: 1.25rem;
