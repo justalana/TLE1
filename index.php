@@ -24,16 +24,11 @@
     ?>
 </header>
 <main>
-    <section id="onze-specialisten">
+    <section id="onderzoek-deelnemers">
         <?php
-        require_once 'main-section-one.php';
+        require_once 'main-section-two.php';
         ?>
     </section>
-<!--    <section id="onderzoek-deelnemers">-->
-<!--        --><?php
-//        require_once 'main-section-two.php';
-//        ?>
-<!--    </section>-->
     <section id="meest-gekozen-onderzoeken">
         <?php
         require_once 'main-section-three.php';

@@ -5,14 +5,16 @@ body {
     margin: 0;
     padding: 0;
     color: #2C284A;
+    background-color: #fcf8f8;
 }
 
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: #fcf8f8;
     padding: 2vh 5vw;
+    border-bottom: 1px solid #fed677;
 }
 
 .nav-bar-left {
@@ -38,14 +40,14 @@ nav a {
     align-items: center;
     text-decoration: none;
     color: #ffffff;
-    background: #92BFEE;
+    background: #a3e4ee;
     padding: 10px 10px;
     width: 150px;
     text-align: center;
     border-radius: 25px 25px;
-    border: 2px solid #92BFEE;
+    border: 2px solid #a3e4ee;
     transition: 200ms ease-in-out;
-    box-shadow: 0px 0px 10px #92BFEE;
+    box-shadow: 0px 0px 10px #a3e4ee;
 }
 
 nav a:hover {
@@ -94,8 +96,8 @@ header section {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 5vh 5vw;
-    gap: 50px;
+    padding: 5vh 10vw;
+    gap:50px;
 }
 
 @keyframes slideInRight {
@@ -167,7 +169,7 @@ header section {
 .bar {
     display: flex;
     justify-content: right;
-    background: #92BFEE;
+    background: #fed677;
     height: 1px;
     margin: 0 2vw;
 }
@@ -176,7 +178,7 @@ header section {
 #onze-specialisten-cards, #deelnemers-cards {
     display: flex;
     justify-content: space-between;
-    padding: 4vh 7vw;
+    padding: 4vh 12vw;
     gap: 6vw;
 }
 
@@ -202,9 +204,17 @@ header section {
 .deelnemer-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    width: 20vw;
 }
+
+.review_stars {
+    border-radius: 0 !important;
+    margin: 15px;
+    height: 50px !important;
+}
+
 
 .deelnemer-card h2, .deelnemer-card p, .footer-div h2, .footer-div p, .terms-condition h2 {
     margin: 0;
@@ -213,9 +223,9 @@ header section {
 
 #gekozen-onderzoeken {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 3vw;
-    padding: 5vh 2vw;
+    padding: 5vh 15vw;
 }
 
 .gekozen-onderzoek-card {
@@ -225,7 +235,12 @@ header section {
     background: #92BFEE;
     padding: 4vh 1vw;
     border-radius: 25px 25px;
-
+    justify-content: space-around;
+    background: rgba(252, 169, 156, 0.5);
+    padding: 4vh 1vw;
+    border-radius: 25px 25px;
+    width: 17vw;
+    word-wrap: break-word;
 }
 
 .gekozen-onderzoek-card h2 {
@@ -238,6 +253,7 @@ header section {
     gap:40px;
     color:white;
     text-shadow: 1px 1px 2px #000000;
+    /*color: white;*/
 }
 
 .gekozen-onderzoek-card-middle {
@@ -245,6 +261,8 @@ header section {
     gap: 15px;
     width: 100%;
     color: white;
+    width: 250px;
+    /*color: white;*/
 }
 
 .gekozen-onderzoek-card a {
@@ -253,7 +271,7 @@ header section {
     color: #f6f6f6;
     font-weight: bold;
     border-radius: 25px 25px;
-    background: rgba(84, 110, 138, 0.5);
+    background: #fca99c;
     padding: 6px 5px;
 }
 .gekozen-onderzoek-card a:hover{
@@ -262,13 +280,22 @@ header section {
     transition: 200ms ease-in-out;
 }
 
-.alle-onderzoeken {
+
+.alle-onderzoeken-button-container {
+    background-color: #92BFEE;
     display: flex;
-    justify-content: right;
-    background: #92BFEE;
+    justify-content: center;
+}
+.alle-onderzoeken {
     color: black;
     font-weight: bold;
-    padding: 6px 5px;
+    padding: 5px 10px;
+    transition: all 200ms ease-in-out;
+    text-decoration: none;
+}
+
+.alle-onderzoeken:hover {
+    transform: scale(1.1);
 }
 
 #footer-container {
@@ -331,12 +358,25 @@ main input {
     margin: 10vh 2vw 0;
 }
 
-#alle-onderzoeken {
+
+#headerMainDiv h1 {
+    font-size: 3rem;
+}
+
+#headerMainDiv h2 {
+    font-size: 1rem;
+}
+
+main input{
+    margin: 10vh 2vw 0;
+}
+
+#alle-onderzoeken{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     gap: 3vw;
-    padding: 5vh 2vw;
+    padding: 5vh 10vw;
 }
 
 #section-article-cards {
@@ -344,7 +384,6 @@ main input {
     flex-direction: column;
     background: #92BFEE;
     padding: 4vh 1vw;
-
 }
 
 
@@ -355,11 +394,37 @@ main input {
     justify-content: space-evenly;
     align-items: center;
 }
-#experiment-details{
+
+#experiment-details {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 50%;
     margin: 0 auto;
-
 }
+
+.trustpilot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.trustpilot p {
+    margin: 0.5vw 0 !important;
+}
+.tp-1 {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.trustpilotstars {
+    border-radius: 0 !important;
+    height: min-content !important;
+    object-fit: cover;
+}
+.trustpilotimg {
+    border-radius: 0 !important;
+    height: 40px !important;
+    object-fit: cover;
+    margin-bottom: 1vw;
+}
+

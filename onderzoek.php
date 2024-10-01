@@ -14,7 +14,6 @@ $onderzoek = [];
 while ($row = mysqli_fetch_assoc($result)) {
     $onderzoek[] = $row;
 }
-
 $queryAllInfo = "SELECT * FROM experiments ";
 $resultAllInfo = mysqli_query($conn, $queryAllInfo);
 
