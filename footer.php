@@ -7,7 +7,7 @@
     <div id="terms-condition">
         <h3><a href="#">Privacy</a></h3>
         <h3><a href="#">Cookies</a></h3>
-        <h3><a href="#">Voorwaardes</a></h3>
+        <h3><a href="terms.php">Voorwaardes</a></h3>
     </div>
     <img src="img/vitalislogo.png" alt="">
     <div class="footer-div">
