@@ -1,7 +1,7 @@
 const headerSelector = document.querySelector('header')
 
 // Creeër de elementen
-const container = document.createElement('section')
+const container = document.createElement('section');
 
 // Right div & left div
 const divRight = document.createElement('div');
@@ -20,7 +20,12 @@ headerTitle.id = 'headerTitle'
 
 // Maak een p element voor de tekst
 const text = document.createElement('h3');
+<<<<<<< Updated upstream
 text.textContent = "Wil jij ook geld verdienen door bij te dragen aan de gezondheidszorg? Meld je bij ons aan en maak een impact!"
+=======
+text.textContent = "Hello world"
+
+>>>>>>> Stashed changes
 const aanmeldButton = document.createElement('a');
 aanmeldButton.textContent = 'Nu aanmelden!';
 aanmeldButton.href = 'register.php'

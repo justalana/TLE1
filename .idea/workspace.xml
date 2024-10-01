@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="3cc2b449-1deb-491c-9f18-417613709880" name="Changes" comment="nav bar op de register pagina">
       <change afterPath="$PROJECT_DIR$/about_us.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -11,6 +12,16 @@
       <change beforePath="$PROJECT_DIR$/js/alldata.json" beforeDir="false" afterPath="$PROJECT_DIR$/js/alldata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nav-bar.php" beforeDir="false" afterPath="$PROJECT_DIR$/nav-bar.php" afterDir="false" />
+=======
+    <list default="true" id="3cc2b449-1deb-491c-9f18-417613709880" name="Changes" comment="profile goed gezet">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-section-three.php" beforeDir="false" afterPath="$PROJECT_DIR$/main-section-three.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main-section-two.php" beforeDir="false" afterPath="$PROJECT_DIR$/main-section-two.php" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +54,9 @@
     <setting file="file://$PROJECT_DIR$/main-section-three.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/onderzoek.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -52,6 +66,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -63,6 +78,21 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+>>>>>>> Stashed changes
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -103,6 +133,9 @@
       <workItem from="1727073905775" duration="1442000" />
       <workItem from="1727075703350" duration="1317000" />
       <workItem from="1727080533838" duration="10709000" />
+      <workItem from="1727689936261" duration="9134000" />
+      <workItem from="1727768565992" duration="542000" />
+      <workItem from="1727769361067" duration="591000" />
     </task>
     <task id="LOCAL-00001" summary="push test">
       <option name="closed" value="true" />
@@ -144,6 +177,7 @@
       <option name="project" value="LOCAL" />
       <updated>1727095479448</updated>
     </task>
+<<<<<<< Updated upstream
     <task id="LOCAL-00006" summary="explanation">
       <option name="closed" value="true" />
       <created>1727267550271</created>
@@ -177,6 +211,16 @@
       <updated>1727684282436</updated>
     </task>
     <option name="localTasksCounter" value="10" />
+=======
+    <task id="LOCAL-00006" summary="profile goed gezet">
+      <created>1727269011121</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727269011121</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
