@@ -32,5 +32,5 @@ shuffle($onderzoeken)
 
 </div>
 <div class="alle-onderzoeken-button-container">
-    <a class="alle-onderzoeken" href="alle-onderzoeken.php">Bekijk Alle onderzoeken</a>
+    <a class="alle-onderzoeken" href="alle-onderzoeken.php">Bekijk alle onderzoeken</a>
 </div>
