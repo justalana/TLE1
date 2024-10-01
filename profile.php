@@ -38,7 +38,7 @@ print_r($insuranceData);
 <body>
 <div class="user-container">
     <div class="user-box">
-        <h1 id="user_name"><?= htmlentities($user_info['name'])?></h1>
+        <h1 id="user_name"><?= htmlentities($user_info['first_name'])?> <?=htmlentities($user_info['last_name'] ) ?></h1>
         <div>
             <p class="category">Email</p><p><?= htmlentities($user_info['email'])?></p>
             <p class="category">Telefoonnummer</p><p>0<?= htmlentities($user_info['phone_number'])?></p>

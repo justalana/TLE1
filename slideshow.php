@@ -42,7 +42,7 @@ mysqli_close($conn);
 
         money.push("<?= $experiment['money'] ?>");
         title.push("<?= $experiment['experiment'] ?>");
-        description.push("<?= $experiment['explenation'] ?>");
+        description.push("<?= $experiment['explanation'] ?>");
 
         <?php } ?>
 

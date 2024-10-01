@@ -13,14 +13,11 @@ while ($row = mysqli_fetch_assoc($result)) {
 }
 
 
-
 // this allows the whole table will be converted to a JSON string
-$encoded_data = json_encode($onderzoeken,JSON_FORCE_OBJECT);
+$encoded_data = json_encode($onderzoeken, JSON_FORCE_OBJECT);
 // put the JSON stringefied data into a JSON FILE
-$location ='js/alldata.json';
+$location = 'js/alldata.json';
 file_put_contents($location, $encoded_data);
-
-
 
 
 ?>
@@ -46,6 +43,10 @@ file_put_contents($location, $encoded_data);
     require_once 'nav-bar.php';
     ?>
 
+    <!--    --><?php
+    //    require_once 'slideshow.php';
+    //    ?>
+
 </header>
 <main>
     <section id="alle-onderzoeken">
@@ -53,11 +54,15 @@ file_put_contents($location, $encoded_data);
             <div class="gekozen-onderzoek-card">
                 <h2><?= $onderzoek['experiment'] ?></h2>
                 <h2>€<?= $onderzoek['money'] ?></h2>
+                <div class="gender-age">
+                    <h3><?= $onderzoek['gender'] ?></h3>
+                    <h3>18 - 55 jaar</h3>
+                </div>
+
                 <div class="gekozen-onderzoek-card-middle">
-                    <p>datum 14/09 </p>
                     <p><?= $onderzoek['explanation'] ?></p>
                 </div>
-                <a href="onderzoek.php?id=<?=$onderzoek['id']?>">Aanmelden</a>
+                <a href="onderzoek.php?id=<?= $onderzoek['id'] ?>">Aanmelden</a>
             </div>
         <?php } ?>
     </section>

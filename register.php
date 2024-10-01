@@ -96,16 +96,20 @@ if (isset($_POST['submit'])) {
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="bmi_calculator.js"></script>
     <title>registreren</title>
 </head>
 <body>
 
-<header class="register-header">
-    <h1>Meld u nu aan</h1>
+<header>
+    <?php require_once 'nav-bar.php'?>
+    <div class="register-header">
+        <h1>Meld u nu aan</h1>
+    </div>
 </header>
-
 
 <form class="register-form" action="" method="post">
 
