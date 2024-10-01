@@ -223,16 +223,25 @@ header section {
 .gekozen-onderzoek-card {
     display: flex;
     flex-direction: column;
+<<<<<<< Updated upstream
+    justify-content: space-between;
+    background: #92BFEE;
+    padding: 4vh 1vw;
+    border-radius: 25px 25px;
+
+=======
     justify-content: space-around;
     background: rgba(252, 169, 156, 0.5);
     padding: 4vh 1vw;
     border-radius: 25px 25px;
     width: 17vw;
     word-wrap: break-word;
+>>>>>>> Stashed changes
 }
 
 .gekozen-onderzoek-card h2 {
     text-align: center;
+<<<<<<< Updated upstream
     color: white;
     text-shadow: 1px 1px 5px #2C284A;
 }
@@ -249,8 +258,13 @@ header section {
 .gekozen-onderzoek-card-middle {
     display: flex;
     gap: 15px;
+<<<<<<< Updated upstream
+    width: 100%;
+    color: white;
+=======
     width: 250px;
     /*color: white;*/
+>>>>>>> Stashed changes
 }
 
 .gekozen-onderzoek-card a {
@@ -268,23 +282,13 @@ header section {
     transition: 200ms ease-in-out;
 }
 
-.alle-onderzoeken-button-container {
-    background: #a3e4ee;
-    display: flex;
-    justify-content: center;
-}
-
 .alle-onderzoeken {
-    text-decoration: none;
-    font-weight: lighter;
+    display: flex;
+    justify-content: right;
+    background: #92BFEE;
     color: black;
     font-weight: bold;
     padding: 6px 5px;
-    transition: all 200ms ease-in-out;
-}
-
-.alle-onderzoeken:hover {
-    transform: scale(1.1);
 }
 
 #footer-container {
@@ -343,10 +347,13 @@ header section {
     margin: 0 auto;
 }
 
+<<<<<<< Updated upstream
 main input {
     margin: 10vh 2vw 0;
 }
 
+#alle-onderzoeken {
+=======
 #headerMainDiv h1 {
     font-size: 3rem;
 }
@@ -360,6 +367,7 @@ main input{
 }
 
 #alle-onderzoeken{
+>>>>>>> Stashed changes
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;

@@ -1,16 +1,48 @@
 <?php
+/** @var mysqli $conn */
+
+require_once "connection.php";
+
+$query = "SELECT * FROM `reviews` WHERE id = 1";
+$result1 = mysqli_query($conn, $query) or die('error: ' . mysqli_error($conn));
+$review1 = mysqli_fetch_assoc($result1);
+
+$query = "SELECT * FROM `reviews` WHERE id = 2";
+$result2 = mysqli_query($conn, $query) or die('error: ' . mysqli_error($conn));
+$review2 = mysqli_fetch_assoc($result2);
+
+$query = "SELECT * FROM `reviews` WHERE id = 3";
+$result3 = mysqli_query($conn, $query) or die('error: ' . mysqli_error($conn));
+$review3 = mysqli_fetch_assoc($result3);
+
 ?>
 <h1>ONDERZOEK DEELNEMERS</h1>
 <div id="deelnemers-cards">
-    <?php for($i = 0; $i < 3; $i++) {?>
     <div class="deelnemer-card">
-        <img src="img/vitalislogo.png" alt="">
-        <h2>Roshan</h2>
-        <p>Mijn ervaringen</p>
-        <p>Mijn ervaringen</p>
-        <p>Mijn ervaringen</p>
-        <p>Mijn ervaringen</p>
+        <img src="img/student1.png" alt="">
+        <h2><?= htmlentities($review1['first_name'])?> <?=htmlentities($review1['last_name'] ) ?></h2>
+        <img src="img/stars-5-1.png" alt="" class="review_stars">
+        <p><?= htmlentities($review1['review'])?></p>
     </div>
-    <?php } ?>
+
+    <div class="deelnemer-card">
+        <img src="img/student2.png" alt="">
+        <h2><?= htmlentities($review2['first_name'])?> <?=htmlentities($review2['last_name'] ) ?></h2>
+        <img src="img/stars-5-1.png" alt="" class="review_stars">
+        <p><?= htmlentities($review2['review'])?></p>
+    </div>
+
+    <div class="deelnemer-card">
+        <img src="img/student3.png" alt="">
+        <h2><?= htmlentities($review3['first_name'])?> <?=htmlentities($review3['last_name'] ) ?></h2>
+        <img src="img/stars-5-1.png" alt="" class="review_stars">
+        <p><?= htmlentities($review3['review'])?></p>
+    </div>
+</div>
+<div class="trustpilot">
+    <p class="tp-1">Uitstekend</p>
+    <img class="trustpilotstars" src="img/stars-5-1.png" alt="trustpilot">
+    <p class="tp-2">Beoordeeld met 4,8/5 op basis van 1.267 beoordelingen.</p>
+    <img class="trustpilotimg" src="img/Trustpilot_logo.png" alt="trustpilot">
 </div>
 <div class="bar"></div>
