@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3cc2b449-1deb-491c-9f18-417613709880" name="Changes" comment="nav bar op de register pagina">
-      <change afterPath="$PROJECT_DIR$/about_us.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bevestiging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/bevestiging.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/alldata.json" beforeDir="false" afterPath="$PROJECT_DIR$/js/alldata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nav-bar.php" beforeDir="false" afterPath="$PROJECT_DIR$/nav-bar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alle-onderzoeken.php" beforeDir="false" afterPath="$PROJECT_DIR$/alle-onderzoeken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calender.php" beforeDir="false" afterPath="$PROJECT_DIR$/calender.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/filleddates.json" beforeDir="false" afterPath="$PROJECT_DIR$/js/filleddates.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onderzoek.php" beforeDir="false" afterPath="$PROJECT_DIR$/onderzoek.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,18 +44,25 @@
     <setting file="file://$PROJECT_DIR$/main-section-three.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/onderzoek.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2mD8dSVv3gU6fM7Z1rEDupLjtpB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "new__text",
+    "git-widget-placeholder": "extra's__inschrijvingen",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,8 +85,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PS-241.14494.237" />
-        <option value="bundled-php-predefined-ba97393d7c68-8f0632a2a215-com.jetbrains.php.sharedIndexes-PS-241.14494.237" />
+        <option value="bundled-php-predefined-ba97393d7c68-b4dcf6bb9de9-com.jetbrains.php.sharedIndexes-PS-233.13135.108" />
       </set>
     </attachedChunks>
   </component>
@@ -102,6 +109,7 @@
       <workItem from="1727073905775" duration="1442000" />
       <workItem from="1727075703350" duration="1317000" />
       <workItem from="1727080533838" duration="10709000" />
+      <workItem from="1727768329260" duration="11454000" />
     </task>
     <task id="LOCAL-00001" summary="push test">
       <option name="closed" value="true" />

@@ -3,6 +3,16 @@ require "connection.php";
 session_start();
 /** @var mysqli $conn */
 
+$id = $_GET['id'];
+
+$loadExperimentInformationQuery = "Select * FROM `experiments` WHERE id= ".$id;
+$loadExperimentInformationResult = mysqli_query($conn, $loadExperimentInformationQuery);
+
+$experiment = [];
+while ($row = mysqli_fetch_assoc($loadExperimentInformationResult)) {
+    $experiment[] = $row;
+}
+
 $loggedUser = $_SESSION['user'] ?? "";
 
 if ($loggedUser != "") {
@@ -63,7 +73,7 @@ if (!empty($_POST['submit'])) {
                 //succes
             }
         }
-        header('Location: index.php');
+        header('Location: bevestiging.php');
     }
 }
 
@@ -92,6 +102,18 @@ mysqli_close($conn);
 </header>
 
 <main>
+    <div class="onderzoek-informatie">
+        <?php foreach ($experiment as $index) { ?>
+        <div id="onderzoek-titel">
+            <?= $index['experiment']?>
+        </div>
+            <div id="onderzoek-explanation">
+                <?= $index['experiment_details']?>
+            </div>
+        <?php }?>
+    </div>
+
+
     <form method="post">
         <div class="left-majo">
             <div class="left">
