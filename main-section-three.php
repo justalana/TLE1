@@ -15,11 +15,7 @@ shuffle($onderzoeken)
 <h1>MEEST GEKOZEN ONDERZOEKEN</h1>
 <div id="gekozen-onderzoeken">
 
-<<<<<<< Updated upstream
     <?php for ($i = 0; $i < count($onderzoeken) - 3; $i++) { ?>
-=======
-    <?php for ($i = 0; $i < count($onderzoeken) - 7 ; $i++) { ?>
->>>>>>> Stashed changes
         <div class="gekozen-onderzoek-card">
             <h2><?= $onderzoeken[$i]['experiment'] ?></h2>
             <h2>€<?= $onderzoeken[$i]['money'] ?></h2>
