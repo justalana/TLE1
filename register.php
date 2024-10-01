@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
     // If data valid
     // Check if the email is already in use
     $checkQuery = "SELECT * FROM users WHERE email = '$email'";
-    $checkResult = mysqli_query($conn, $checkQuery);
+    $checkResult = mysqli_query($conn, $checkQuery) or die('error: ' . mysqli_error($conn));
 
     // Check if weight and height are filled in
     if (!empty($_POST['gewicht']) && !empty($_POST['lengte'])) {
@@ -72,7 +72,8 @@ if (isset($_POST['submit'])) {
                             VALUES (NULL, '$email', '$telefoonnummer', '$hashedPassword', '$voornaam', '$achternaam', '$land', '$stad', '$straat', '$tussenvoegsels', '$postcode', '$huisnummer', '$lengte', '$gewicht', '$BMI', '$bloedgroep')";
 
             // Generate a random number for the dept column
-            $randomDept = rand(1000, 1000000); // adjust the range as needed
+//            $randomDept = rand(1000, 1000000); // adjust the range as needed
+            $randomDept = 0;
 
             $secondInsertQuery = "INSERT INTO `insurance_users` (`email`, `first_name`, `last_name`, `dept`)
                                     VALUES ('$email', '$voornaam', '$achternaam', '$randomDept')";
@@ -154,5 +155,10 @@ if (isset($_POST['submit'])) {
         <button class="register-button" type="submit" name="submit">Registreer</button>
     </div>
 </form>
+
+<footer>
+    <?php require_once 'footer.php'?>
+</footer>
+
 </body>
 </html>

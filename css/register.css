@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background-color: #FFF5F5;
+    background-color: #fcf8f8;
     font-family: "Kanit", sans-serif;
     margin: 0;
 }
@@ -26,7 +26,7 @@ body {
     margin: 5% 20%;
     padding: 2%;
     border-radius: 2rem;
-    background-color: #92BFEE;
+    background-color: rgba(163, 228, 238, 0.5);
 }
 
 .gender-buttons-container {
@@ -83,7 +83,7 @@ body {
     font-family: "Kanit", sans-serif;
     border: none;
     border-radius: 2rem;
-    background-color: red;
+    background-color: #a3e4ee;
     padding: 1rem 3rem;
     transition: background-color 0.3s ease-in-out; /* add transition effect */
 }
@@ -133,7 +133,7 @@ body {
     width: 20vw;
     padding: 2%;
     border-radius: 2rem;
-    background-color: #92BFEE;
+    background-color: rgba(163, 228, 238, 0.5);
 }
 
 .right-side-login {
