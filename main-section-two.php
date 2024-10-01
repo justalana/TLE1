@@ -13,4 +13,10 @@
     </div>
     <?php } ?>
 </div>
+<div class="trustpilot">
+    <p class="tp-1">Uitstekend</p>
+    <img class="trustpilotstars" src="img/stars-5-1.png" alt="trustpilot">
+    <p class="tp-2">Beoordeeld met 4,8/5 op basis van 1.267 beoordelingen.</p>
+    <img class="trustpilotimg" src="img/Trustpilot_logo.png" alt="trustpilot">
+</div>
 <div class="bar"></div>

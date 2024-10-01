@@ -228,25 +228,20 @@ header section {
 .gekozen-onderzoek-card {
     display: flex;
     flex-direction: column;
-<<<<<<< Updated upstream
     justify-content: space-between;
     background: #92BFEE;
     padding: 4vh 1vw;
     border-radius: 25px 25px;
-
-=======
     justify-content: space-around;
     background: rgba(252, 169, 156, 0.5);
     padding: 4vh 1vw;
     border-radius: 25px 25px;
     width: 17vw;
     word-wrap: break-word;
->>>>>>> Stashed changes
 }
 
 .gekozen-onderzoek-card h2 {
     text-align: center;
-<<<<<<< Updated upstream
     color: white;
     text-shadow: 1px 1px 5px #2C284A;
 }
@@ -255,21 +250,16 @@ header section {
     gap:40px;
     color:white;
     text-shadow: 1px 1px 2px #000000;
-=======
     /*color: white;*/
->>>>>>> Stashed changes
 }
 
 .gekozen-onderzoek-card-middle {
     display: flex;
     gap: 15px;
-<<<<<<< Updated upstream
     width: 100%;
     color: white;
-=======
     width: 250px;
     /*color: white;*/
->>>>>>> Stashed changes
 }
 
 .gekozen-onderzoek-card a {
@@ -352,13 +342,11 @@ header section {
     margin: 0 auto;
 }
 
-<<<<<<< Updated upstream
 main input {
     margin: 10vh 2vw 0;
 }
 
-#alle-onderzoeken {
-=======
+
 #headerMainDiv h1 {
     font-size: 3rem;
 }
@@ -372,7 +360,6 @@ main input{
 }
 
 #alle-onderzoeken{
->>>>>>> Stashed changes
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
@@ -385,7 +372,6 @@ main input{
     flex-direction: column;
     background: #92BFEE;
     padding: 4vh 1vw;
-
 }
 
 
@@ -396,11 +382,36 @@ main input{
     justify-content: space-evenly;
     align-items: center;
 }
-#experiment-details{
+
+#experiment-details {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 50%;
     margin: 0 auto;
+}
 
+.trustpilot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.trustpilot p {
+    margin: 0.5vw 0 !important;
+}
+.tp-1 {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.trustpilotstars {
+    border-radius: 0 !important;
+    height: min-content !important;
+    object-fit: cover;
+}
+.trustpilotimg {
+    border-radius: 0 !important;
+    height: 40px !important;
+    object-fit: cover;
+    margin-bottom: 1vw;
 }
