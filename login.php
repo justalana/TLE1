@@ -82,7 +82,7 @@ if (isset($_POST['submit'])) {
     <section class="login">
 
         <div class="login-logo">
-            <img class="login-logo-image" src="IMG/vitalislogo.png">
+            <img class="login-logo-image" src="img/vitalislogo.png">
             <h1>Vitalis System</h1>
         </div>
 
