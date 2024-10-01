@@ -43,9 +43,9 @@ file_put_contents($location, $encoded_data);
     require_once 'nav-bar.php';
     ?>
 
-    <!--    --><?php
-    //    require_once 'slideshow.php';
-    //    ?>
+        <?php
+        require_once 'slideshow.php';
+        ?>
 
 </header>
 <main>

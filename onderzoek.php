@@ -58,7 +58,7 @@ shuffle($onderzoeken)
             <?php } else { ?>
                 <h3><?= $index['comeback_days'] ?> Terugkomdagen </h3>
             <?php } ?>
-            <a href="calender.php?id=<?= $id ?>">Inschrijven</a>
+            <a href="calender.php?id=<?= $index['id']?>">Inschrijven</a>
         </div>
 
     </div>
@@ -67,7 +67,7 @@ shuffle($onderzoeken)
 <main>
     <section id="experiment-details">
         <h1>Over het Onderzoek</h1>
-            <p><?=$index['experiment_details']?></p>
+<!--            <p>--><?php //=$index['experiment_details']?><!--</p>-->
         <?php } ?>
     </section>
 
