@@ -24,11 +24,6 @@
     ?>
 </header>
 <main>
-<!--    <section id="onze-specialisten">-->
-<!--        --><?php
-//        require_once 'main-section-one.php';
-//        ?>
-<!--    </section>-->
     <section id="onderzoek-deelnemers">
         <?php
         require_once 'main-section-two.php';

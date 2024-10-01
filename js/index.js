@@ -20,12 +20,8 @@ headerTitle.id = 'headerTitle'
 
 // Maak een p element voor de tekst
 const text = document.createElement('h3');
-<<<<<<< Updated upstream
 text.textContent = "Wil jij ook geld verdienen door bij te dragen aan de gezondheidszorg? Meld je bij ons aan en maak een impact!"
-=======
-text.textContent = "Hello world"
 
->>>>>>> Stashed changes
 const aanmeldButton = document.createElement('a');
 aanmeldButton.textContent = 'Nu aanmelden!';
 aanmeldButton.href = 'register.php'
