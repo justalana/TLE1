@@ -67,7 +67,7 @@ shuffle($onderzoeken)
 <main>
     <section id="experiment-details">
         <h1>Over het Onderzoek</h1>
-<!--            <p>--><?php //=$index['experiment_details']?><!--</p>-->
+            <p><?=$index['experiment_details']?></p>
         <?php } ?>
     </section>
 
