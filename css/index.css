@@ -213,6 +213,13 @@ header section {
     align-items: center;
 }
 
+.review_stars {
+    border-radius: 0 !important;
+    margin: 15px;
+    height: 50px !important;
+}
+
+
 .deelnemer-card h2, .deelnemer-card p, .footer-div h2, .footer-div p, .terms-condition h2 {
     margin: 0;
     padding: 0;

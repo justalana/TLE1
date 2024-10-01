@@ -21,21 +21,21 @@ $review3 = mysqli_fetch_assoc($result3);
     <div class="deelnemer-card">
         <img src="img/student1.png" alt="">
         <h2><?= htmlentities($review1['first_name'])?> <?=htmlentities($review1['last_name'] ) ?></h2>
-        <img src="img/review_stars.png" alt="" class="review_stars">
+        <img src="img/stars-5-1.png" alt="" class="review_stars">
         <p><?= htmlentities($review1['review'])?></p>
     </div>
 
     <div class="deelnemer-card">
         <img src="img/student2.png" alt="">
         <h2><?= htmlentities($review2['first_name'])?> <?=htmlentities($review2['last_name'] ) ?></h2>
-        <img src="img/review_stars.png" alt="" class="review_stars">
+        <img src="img/stars-5-1.png" alt="" class="review_stars">
         <p><?= htmlentities($review2['review'])?></p>
     </div>
 
     <div class="deelnemer-card">
         <img src="img/student3.png" alt="">
         <h2><?= htmlentities($review3['first_name'])?> <?=htmlentities($review3['last_name'] ) ?></h2>
-        <img src="img/review_stars.png" alt="" class="review_stars">
+        <img src="img/stars-5-1.png" alt="" class="review_stars">
         <p><?= htmlentities($review3['review'])?></p>
     </div>
 </div>
