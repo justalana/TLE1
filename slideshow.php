@@ -3,8 +3,6 @@
 
 require_once 'connection.php';
 
-$query = 'SELECT * FROM experiments';
-
 $result = mysqli_query($conn, $query)
 or die('Error '.mysqli_error($conn).' with query '.$query);
 
@@ -32,15 +30,15 @@ mysqli_close($conn);
     <script type="text/javascript">
         window.addEventListener('load', init);
 
-        let image = ["images/zorg_1.jpg","images/zorg_2.jpg","images/zorg_3.jpg", "images/zorg_4.jpg", "images/zorg_5.jpg", "images/zorg_6.jpg", "images/zorg_7.jpg", "images/zorg_8.jpg", "images/zorg_9.jpg", "images/zorg_10.jpg"];
-        let money= []
-        let title= []
-        let description= []
+        let image = ["images/zorg_1.jpg","images/zorg_2.jpg","images/zorg_3.jpg", "images/zorg_4.jpg", "images/zorg_5.jpg", "images/zorg_6.jpg", "images/zorg_7.jpg"];
+        let money= [];
+        let title= [];
+        let description= [];
 
         <?php foreach ($experiments as $experiment) {?>
 
 
-        money.push("<?= $experiment['money'] ?>");
+        money.push("€<?= $experiment['money'] ?>");
         title.push("<?= $experiment['experiment'] ?>");
         description.push("<?= $experiment['explanation'] ?>");
 
@@ -125,6 +123,7 @@ mysqli_close($conn);
             <div class="title" id="title"></div>
             <div class="description" id="description"></div>
             <div class="money" id="money"></div>
+            <div id="onderzoek-header"></div>
         </td>
         <td align="right">
             <a href="javascript:change_image(1)">

@@ -31,8 +31,8 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
-    bottom: 450px;
-    left: 450px;
+    bottom: 400px;
+    left: 350px;
 }
 
 #description {
@@ -42,7 +42,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     border-radius: 5px;
-    bottom: 350px;
+    bottom: 250px;
     left: 100px;
 }
 
@@ -55,6 +55,19 @@
     border-radius: 5px;
     bottom: 100px;
     left: 100px;
+}
+
+#onderzoek-header {
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #92BFEE;
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 100px;
+    left: 700px;
+    cursor:pointer;
 }
 
 .arrow {
