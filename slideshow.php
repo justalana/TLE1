@@ -123,7 +123,6 @@ mysqli_close($conn);
             <div class="title" id="title"></div>
             <div class="description" id="description"></div>
             <div class="money" id="money"></div>
-            <div id="onderzoek-header"></div>
         </td>
         <td align="right">
             <a href="javascript:change_image(1)">
