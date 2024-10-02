@@ -15,7 +15,21 @@ if (!isset($_SESSION['user'])) {
 $user_info = $_SESSION['user'];
 
 $query = "SELECT * FROM insurance_users WHERE email = '{$user_info['email']}'";
-$result = mysqli_query($conn, $query) or die('error: ' . mysqli_error($conn));
+$result = mysqli_query($conn, $query);
+
+$getCompletedExp = "SELECT *
+                    FROM Experiments
+                    JOIN Completed_Experiments
+                    ON experiments.id = completed_experiments.experiment_ID
+                    WHERE completed_experiments.user_ID = {$user_info['id']};";
+$resultCompletedExp = mysqli_query($conn, $getCompletedExp);
+
+
+while ($row = mysqli_fetch_assoc($resultCompletedExp)) {
+    $completedResults[] = $row;
+}
+
+
 
 $insuranceData = mysqli_fetch_assoc($result);
 
@@ -27,8 +41,8 @@ mysqli_close($conn);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Profile</title>
-    <link rel="stylesheet" type="text/css" href="css/profile.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
 </head>
 <header>
     <?php
@@ -54,34 +68,19 @@ mysqli_close($conn);
         <h2>Beginnende Tester</h2>
         <img src="img/medal.png" alt="medal image">
         <p id="debt">€<?= htmlentities($insuranceData['dept'])?>,- Verdiend</p>
-        <button id="edit_prof">Profiel Bewerken</button>
         <button id="edit_prof" ><a href="logout.php">Uitloggen</a></button>
     </div>
 </div>
 <div>
     <h1>Voltooide onderzoeken</h1>
     <div class="exp-container">
-        <div class="exp-box">
-            <h2>Experiment1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button class="view-exp">Bekijk Onderzoek</button>
-        </div>
-        <div class="exp-box">
-            <h2>Experiment2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button class="view-exp">Bekijk Onderzoek</button>
-        </div>
-        <div class="exp-box">
-            <h2>Experiment3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button class="view-exp">Bekijk Onderzoek</button>
-        </div>
-        <div class="exp-box">
-            <h2>Experiment4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <button class="view-exp">Bekijk Onderzoek</button>
-        </div>
-
+        <?php foreach ($completedResults ?? "" as $completedResult) { ?>
+            <div class="exp-box">
+                <h2><?= $completedResult['experiment']?></h2>
+                <p><?= $completedResult['explanation']?></p>
+                <a class="view-exp" href="onderzoek.php?id=<?=$completedResult['id']?>">Bekijk Onderzoek</a>
+            </div>
+        <?php } ?>
     </div>
 </div>
 </body>

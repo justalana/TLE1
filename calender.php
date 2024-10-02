@@ -3,9 +3,9 @@ require "connection.php";
 session_start();
 /** @var mysqli $conn */
 
-$id = $_GET['id'];
+$id = $_GET['id'] ?? "";
 
-$loadExperimentInformationQuery = "Select * FROM `experiments` WHERE id= ".$id;
+$loadExperimentInformationQuery = "Select * FROM `experiments` WHERE id = $id";
 $loadExperimentInformationResult = mysqli_query($conn, $loadExperimentInformationQuery);
 
 $experiment = [];
@@ -37,7 +37,7 @@ $query = "SELECT `money` FROM `experiments` WHERE id = '$id'";
 $result = mysqli_query($conn, $query);
 $money = mysqli_fetch_assoc($result);
 
-//$newMoney = $insuranceData['dept'] + $money['money'];
+$newMoney = $insuranceData['dept'] + $money['money'];
 
 
 $loadAppointmentsQuery = "SELECT `date` FROM `appointments`";
@@ -82,12 +82,12 @@ if (!empty($_POST['submit'])) {
             $updateQuery = "UPDATE `insurance_users` SET `dept` = '$newMoney' WHERE `email` = '{$loggedUser['email']}'";
             $updateResult = mysqli_query($conn, $updateQuery);
 
-
-            $postQuery = "INSERT INTO `appointments`(`user_ID`, `date`, `name`, `last_name`, `e-mail`, `phone`, `gender`, `side_notes`) VALUES ('$userID','$date','$name','$lastName','$email','$phone','$gender','$sideNotes')";
+            $postQuery = "INSERT INTO `appointments`(`user_ID`, `date`, `name`, `last_name`, `e-mail`, `phone`, `gender`) VALUES ('$userID','$date','$name','$lastName','$email','$phone','$gender')";
             $postResult = mysqli_query($conn, $postQuery);
-            if ($postResult) {
-                //succes
-            }
+
+            //Simpele workaround via een losse tabel om snel nog de completed experiments toe te voegen zonder moeilijk te doen met database.
+            $completedExperimentsQuery = "INSERT INTO `completed_experiments`(`user_ID`, `experiment_ID`) VALUES ('$userID','$id')";
+            $completedExperimentsResult = mysqli_query($conn, $completedExperimentsQuery);
         }
         header('Location: bevestiging.php');
     }
