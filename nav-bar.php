@@ -11,7 +11,8 @@ if (isset($_SESSION['user'])) {?>
             <img src="img/vitalislogo.png" alt="Logo">
         </div>
         <a href="about_us.php">Over ons</a>
-        <a href="profile.php">Profiel</a>
+        <a href="profile.php" id="button">Profiel</a>
+
     </div>
 </nav>
 <?php }else {?>
