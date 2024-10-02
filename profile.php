@@ -73,8 +73,8 @@ mysqli_close($conn);
 </div>
 <div class="voltooid">
     <h1>Voltooide onderzoeken</h1>
+    <?php if (isset($completedResults)) {?>
     <div class="exp-container">
-        <?php if (isset($completedResults)) {?>
             <?php foreach ($completedResults ?? "" as $completedResult) { ?>
                 <div class="exp-box">
                     <h2><?= $completedResult['experiment']?></h2>
@@ -82,13 +82,15 @@ mysqli_close($conn);
                     <a class="view-exp" href="onderzoek.php?id=<?=$completedResult['id']?>">Bekijk Onderzoek</a>
                 </div>
             <?php } ?>
-        <?php } else { ?>
-                <div class="geen-onderzoeken">
-                    <h2>Er zijn nog geen onderzoeken voltooid.</h2>
-                    <a href="alle-onderzoeken.php">Meld je hier aan voor een onderzoek!</a>
-                </div>
-        <?php } ?>
     </div>
+    <?php } else { ?>
+    <div class="geen-onderzoekdiv">
+        <div class="geen-onderzoeken">
+            <h2>Er zijn nog geen onderzoeken voltooid.</h2>
+            <a href="alle-onderzoeken.php">Meld je hier aan voor een onderzoek!</a>
+        </div>
+    </div>
+    <?php } ?>
 </div>
 </body>
 </html>
