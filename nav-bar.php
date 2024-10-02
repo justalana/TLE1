@@ -12,6 +12,7 @@ if (isset($_SESSION['user'])) {?>
         </div>
         <a href="about_us.php">Over ons</a>
         <a href="profile.php" id="button">Profiel</a>
+
     </div>
 </nav>
 <?php }else {?>

@@ -71,16 +71,12 @@ if (isset($_POST['submit'])) {
             $insertQuery = "INSERT INTO `users` (`id`, `email`, `phone_number`, `password`, `first_name`, `last_name`, `country`, `city`, `street`, `prefixes`, `zip_code`, `house_number`, `height`, `weight`, `BMI`, `blood_type`, `gender`)
                             VALUES (NULL, '$email', '$telefoonnummer', '$hashedPassword', '$voornaam', '$achternaam', '$land', '$stad', '$straat', '$tussenvoegsels', '$postcode', '$huisnummer', '$lengte', '$gewicht', '$BMI', '$bloedgroep', '$geslacht')";
 
-//            // Generate a random number for the dept column
-////            $randomDept = rand(1000, 1000000); // adjust the range as needed
-//            $randomDept = 0;
+            $debt = 0;
 //
-//            $secondInsertQuery = "INSERT INTO `insurance_users` (`email`, `first_name`, `last_name`, `dept`)
-//                                    VALUES ('$email', '$voornaam', '$achternaam', '$randomDept')";
+            $secondInsertQuery = "INSERT INTO `insurance_users` (`email`, `first_name`, `last_name`, `dept`)
+                                    VALUES ('$email', '$voornaam', '$achternaam', '$debt')";
 
-//            && mysqli_query($conn, $secondInsertQuery)
-
-            if (mysqli_query($conn, $insertQuery)) {
+            if (mysqli_query($conn, $insertQuery) && mysqli_query($conn, $secondInsertQuery)) {
                 // Redirect to login page
                 header('location: index.php');
                 // Exit the code
@@ -120,7 +116,7 @@ if (isset($_POST['submit'])) {
 
     <div class="gender-buttons-container">
         <label for="genderMen">man</label>
-        <input class="gender-buttons" id="genderMen" type="radio" name="gender" value="man">
+        <input class="gender-buttons" id="genderMen" type="radio" name="gender" value="man" checked>
 
         <label for="genderWoman">vrouw</label>
         <input class="gender-buttons" id="genderWoman" type="radio" name="gender" value="woman">

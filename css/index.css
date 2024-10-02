@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     color: #2C284A;
-    background-color: #fcf8f8;
+    background-color: #FFFCF5;
     overflow-x: hidden;
 }
 
@@ -13,7 +13,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fcf8f8;
+    background-color: #FFFCF5;
     padding: 2vh 5vw;
     border-bottom: 1px solid #fed677;
 }
