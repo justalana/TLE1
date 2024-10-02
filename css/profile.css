@@ -67,7 +67,8 @@
 }
 
 .exp-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center ;
     padding: 5vh 2vw;
     gap: 50px;
