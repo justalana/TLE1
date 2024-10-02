@@ -18,8 +18,8 @@ $query = "SELECT * FROM insurance_users WHERE email = '{$user_info['email']}'";
 $result = mysqli_query($conn, $query);
 
 $getCompletedExp = "SELECT *
-                    FROM Experiments
-                    JOIN Completed_Experiments
+                    FROM experiments
+                    JOIN completed_experiments
                     ON experiments.id = completed_experiments.experiment_ID
                     WHERE completed_experiments.user_ID = {$user_info['id']};";
 $resultCompletedExp = mysqli_query($conn, $getCompletedExp);
@@ -71,15 +71,22 @@ mysqli_close($conn);
         <button id="edit_prof" ><a href="logout.php">Uitloggen</a></button>
     </div>
 </div>
-<div>
+<div class="voltooid">
     <h1>Voltooide onderzoeken</h1>
     <div class="exp-container">
-        <?php foreach ($completedResults ?? "" as $completedResult) { ?>
-            <div class="exp-box">
-                <h2><?= $completedResult['experiment']?></h2>
-                <p><?= $completedResult['explanation']?></p>
-                <a class="view-exp" href="onderzoek.php?id=<?=$completedResult['id']?>">Bekijk Onderzoek</a>
-            </div>
+        <?php if (isset($completedResults)) {?>
+            <?php foreach ($completedResults ?? "" as $completedResult) { ?>
+                <div class="exp-box">
+                    <h2><?= $completedResult['experiment']?></h2>
+                    <p><?= $completedResult['explanation']?></p>
+                    <a class="view-exp" href="onderzoek.php?id=<?=$completedResult['id']?>">Bekijk Onderzoek</a>
+                </div>
+            <?php } ?>
+        <?php } else { ?>
+                <div class="geen-onderzoeken">
+                    <h2>Er zijn nog geen onderzoeken voltooid.</h2>
+                    <a href="alle-onderzoeken.php">Meld je hier aan voor een onderzoek!</a>
+                </div>
         <?php } ?>
     </div>
 </div>
